@@ -16,9 +16,9 @@ function App() {
 
   return (
     <div className="App">
+       <h1 id='title'><Icon css='icon' icon={faBriefcase}/> My Works</h1> 
+       <br/>
       <div>
-        <h1>HELLO WORLD</h1> 
-        <Icon css='icon' icon={faBriefcase}/>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
