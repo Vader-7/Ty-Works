@@ -2,7 +2,6 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import { Icon } from './Icon'
-import  Carousel  from './Carousel'
 import {
   faArrowUp,
   faBars,
@@ -19,7 +18,6 @@ function App() {
     <div className="App">
        <h1 id='title'><Icon css='icon' icon={faBriefcase}/> My Works</h1> 
        <br />
-      <Carousel/>
     </div>
   )
 }
