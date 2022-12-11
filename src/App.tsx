@@ -20,7 +20,10 @@ function App() {
   const [count, setCount] = useState(0)
   return (
     <div className="App">
-      <h1 id="title">My Work</h1>
+      <div id='presentacion'>
+      <h1 id="title">Hello there</h1>
+      <p>I'm Tyler a CS student from Chile, I have experience building e-comerce and web apps</p>
+      </div>
     </div>
   )
 }
