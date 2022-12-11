@@ -15,20 +15,4 @@
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
-body {
-  /*background-image:  url(
-    "/src/assets/img/background0.png");
-      background-size: cover;
-      background-repeat: no-repeat;*/
-  margin: 2px;
-  padding: 2px;
-  display: flex;
-  place-content: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-* {
-  box-sizing: border-box;
-}
-
 

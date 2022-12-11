@@ -15,17 +15,12 @@ import {
 
 function App() {
   // Create your instance
-const gradient = new Gradient()
-
-// Call `initGradient` with the selector to your canvas
-gradient.initGradient('#gradient-canvas')
-        
+  const gradient = new Gradient()      
+  gradient.initGradient('#gradient-canvas')
   const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <canvas id="gradient-canvas" data-transition-in></canvas>
-        <h1 id="title">My Work</h1>
+      <h1 id="title">My Work</h1>
     </div>
   )
 }
