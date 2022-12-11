@@ -16,10 +16,10 @@
                             'embedded-opentype', and 'svg' */
 }
 body {
-  background-image:  url(
+  /*background-image:  url(
     "/src/assets/img/background0.png");
       background-size: cover;
-      background-repeat: no-repeat;
+      background-repeat: no-repeat;*/
   margin: 2px;
   padding: 2px;
   display: flex;
@@ -29,11 +29,6 @@ body {
 }
 * {
   box-sizing: border-box;
-  background-image: white;
 }
-#title{
-  font-size: 50px;
-  font-weight: bolder;
-  place-items: top;
-  padding: 3rem;
-}
+
+
