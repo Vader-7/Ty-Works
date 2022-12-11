@@ -10,12 +10,18 @@
   --gradient-color-3: #eae2ff;  
   --gradient-color-4: #b9beff;
 }
+#presentacion{
+  margin: 100px;
+}
 #title{
+  font-family: 'Title' !important;
   font-size: 30px;
   font-weight: bold;
   color: rgb(0, 0, 0);
 }
-#presentacion{
-  font-size: 17px;
-  margin: 100px;
+#about{
+  font-family: 'Text' !important;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
 }

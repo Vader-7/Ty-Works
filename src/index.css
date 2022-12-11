@@ -1,18 +1,20 @@
 :root {
-  font-family: 'MyFont' !important;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-@font-face {
-  font-family: 'MyFont';
-  src: local('MyFont'), url(./assets/fonts/PPNeueMachina-PlainRegular.otf) format('opentype');
+@font-face{
+  font-family: 'Text';
+  src: local('Text'), url(./assets/fonts/PPNeueMachina-PlainRegular.otf) format('opentype');
   /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
+                          'embedded-opentype', and 'svg' */                 
 }
 
+@font-face{
+  font-family: 'Title';
+  src: local('Title'), url(./assets/fonts/PPNeueMachina-PlainUltraboldItalic.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                          'embedded-opentype', and 'svg' */                 
+}
