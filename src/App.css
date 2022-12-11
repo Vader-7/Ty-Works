@@ -11,8 +11,13 @@
   --gradient-color-4: #b9beff;
 }
 #presentacion{
-  margin: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
+
 #title{
   font-family: 'Title' !important;
   font-size: 30px;

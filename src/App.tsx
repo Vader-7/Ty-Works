@@ -3,14 +3,9 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import { Icon } from './Icon'
 import { Gradient } from './Gradient.js'
-import {
-  faArrowUp,
-  faBars,
-  faCake,
-  faCoffee,
-  faPhone,
-  faBriefcase,
-} from '@fortawesome/free-solid-svg-icons'
+
+
+
 
 
 function App() {
