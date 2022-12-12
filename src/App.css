@@ -10,6 +10,28 @@
   --gradient-color-3: #eae2ff;  
   --gradient-color-4: #00a3d7;
 }
+/*make a footer for links*/
+#footer{
+  position: absolute;
+  border-radius: 15px;
+  top: 95%;
+  left: 50%;
+  width: 7%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'Text' !important;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+/*add space between links icons*/
+#footer a{
+  margin: 0 10px;
+  color: #000000;
+}
+#footer a:hover{
+  color: #000000;
+}
 #presentacion{
   position: absolute;
   top: 50%;
@@ -21,12 +43,11 @@
 #title{
   font-family: 'Title' !important;
   font-size: 30px;
-  font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: rgb(29, 29, 29);
 }
 #about{
   font-family: 'Text' !important;
+  font-weight: 600;
   font-size: 20px;
-  font-weight: bold;
   color: rgb(0, 0, 0);
 }
