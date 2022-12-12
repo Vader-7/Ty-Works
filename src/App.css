@@ -10,19 +10,20 @@
   --gradient-color-3: #eae2ff;  
   --gradient-color-4: #00a3d7;
 }
-/*make a footer for links*/
+/*make a responsive footer for links */
 #footer{
-  position: absolute;
-  border-radius: 15px;
+  position: fixed;
   top: 95%;
   left: 50%;
-  width: 7%;
+  bottom: 0;
+  width: auto;
+  height: 45px;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
-  text-align: center;
-  font-family: 'Text' !important;
-  font-size: 20px;
-  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; 
 }
 /*add space between links icons*/
 #footer a{
