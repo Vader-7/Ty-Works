@@ -45,32 +45,45 @@ Link{
   align-items: center;
   justify-content: center;
   height: 100vh;
+  /*make it responsive*/
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 #presentacion{
-  display: flex;
-  flex: content;
+  /*make it responsive*/
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  /*center the text*/
+  text-align: center;
+  /*add space between the text*/
   flex-direction: column;
 }
 #registApp{
-  display: flex;
-  flex: content;
+  /*make it responsive*/
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  /*center the text*/
+  text-align: center;
+  /*add space between the text*/
+  flex-direction: column;
 }
 
-.left-div {
-    float: left;
-    width: 50%;
-}
-
-.right-div {
-    float: right;
-    width: 50%;
-}
 img{
   /*make the image smaller*/
   width: 200px;
   height: 200px;
+  /*move more down*/
+  margin-top: 100px;
+
+  /*make it responsive*/
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
   border-radius: 30px;
-  color: #ffffff;
 }
 #title{
   font-family: 'Title' !important;
