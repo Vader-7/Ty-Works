@@ -26,21 +26,33 @@
   border-radius: 10px; 
 }
 /*add space between links icons*/
+.Link{
+  margin: 0 10px;
+  color : #000000;
+  font-size: 20px;
+  font-family: 'Title' !important;
+}
 #footer a{
+  font-family: 'Title' !important;
   margin: 0 10px;
   color: #000000;
+  text-decoration: none;
 }
 #footer a:hover{
   color: #000000;
 }
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 #presentacion{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  flex-direction: column;
+}
+#registApp{
   text-align: center;
 }
-
 #title{
   font-family: 'Title' !important;
   font-size: 30px;
