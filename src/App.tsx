@@ -35,14 +35,14 @@ function App() {
       </div>
       <main>
         <div className='content' id='presentacion'> 
-          <div className='md:container md:mx-auto px-4'> 
+          <div className='container'> 
             <h1 id='title'>Hello there</h1>
             <br/>
             <p id='about'>I'm Tyler a CS student from Chile and i like programming</p>
           </div>
         </div>
         <div className='content' id='registApp'>
-          <div className='md:container md:mx-auto px-4'>
+          <div className='container'>
             <h1 id='title'>RegistApp</h1>
             <p id='about'>I made an application for the students of my university to mark attendance using a QR code with IONIC using Angular.
             <br />
