@@ -16,7 +16,7 @@ import {  faMobile,
           faHouse 
        } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-scroll'
-
+import img from '/images/Subtract.png'
 
 
 function App() {
@@ -47,7 +47,7 @@ function App() {
             I'm still working on it...</p>
           </div>
           <div className='.right-div'>
-          <a href="https://github.com/Vader-7/Aunt"><img src='/images/splash.png' alt=""></img></a>
+          <a href="https://github.com/Vader-7/Aunt"><img src={img} alt=""></img></a>
           </div>
           <br />
         </div>
