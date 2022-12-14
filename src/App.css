@@ -70,14 +70,26 @@ Link{
   /*add space between the text*/
   flex-direction: column;
 }
-
+#logos{
+  /*hold both logos on same line*/
+  display: flex;
+  /*make it responsive*/
+  padding-top: 10%;
+}
+.left-div{
+  /*move it left*/
+  padding-left: 10%;
+}
+.right-div{
+  /*make it responsive*/
+  /*center the text*/
+  padding-right: 10%;
+}
 img{
   /*make the image smaller*/
   width: 200px;
   height: 200px;
   /*move more down*/
-  margin-top: 100px;
-
   /*make it responsive*/
   @media (max-width: 768px) {
     width: 100%;

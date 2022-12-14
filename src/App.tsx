@@ -16,7 +16,8 @@ import {  faMobile,
           faHouse 
        } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-scroll'
-import img from '/images/Subtract.png'
+import img from '/images/Subtract.jpg'
+import qr from '/images/frame.png'
 
 
 function App() {
@@ -39,15 +40,20 @@ function App() {
           <p id='about'>I'm Tyler a CS student from Chile and i like programming</p>
         </div>
         <div className='content' id='registApp'>
-          <div className='left-div'>
+          <div>
             <h1 id='title'>RegistApp</h1>
             <p id='about'>I made an application for the students of my university to mark attendance using a QR code with IONIC using Angular.
             <br />
             <br />
             I'm still working on it...</p>
           </div>
-          <div className='.right-div'>
-          <a href="https://github.com/Vader-7/Aunt"><img src={img} alt=""></img></a>
+          <div id='logos'>
+            <div className='right-div'>
+              <a href="https://drive.google.com/file/d/1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF/view?usp=share_link"><img src={img} alt=""></img></a>
+            </div>
+            <div className='left-div'>
+              <img src={qr} alt=""></img>
+            </div>
           </div>
           <br />
         </div>
