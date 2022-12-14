@@ -75,6 +75,9 @@ Link{
   display: flex;
   /*make it responsive*/
   padding-top: 10%;
+  text-align: center !important;
+  /*put the logos on the center*/
+  justify-content: center;
 }
 .left-div{
   /*move it left*/
