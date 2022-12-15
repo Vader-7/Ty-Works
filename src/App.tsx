@@ -16,6 +16,7 @@ import {  faMobile,
           faHouse,
           faCircleArrowDown,
           faCircleArrowUp,
+          faGripLinesVertical,
        } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-scroll'
 import img from '/images/Subtract.jpg'
@@ -33,7 +34,8 @@ function App() {
     <div className="App">
       <div id='footer' className='backdrop-blur-md backdrop-brightness-150 md:backdrop-filter-none'>
         <a href="https://github.com/Vader-7" target='_blank'><FontAwesomeIcon icon={faGithub} ></FontAwesomeIcon></a>
-        <a href="https://twitter.com/elonmusk" target='_blank'><FontAwesomeIcon icon={faLinkedin} ></FontAwesomeIcon></a>
+        <a href="http://linkedin.com/in/tylermiranda" target='_blank'><FontAwesomeIcon icon={faLinkedin} ></FontAwesomeIcon></a>
+        <a><FontAwesomeIcon icon={faGripLinesVertical} ></FontAwesomeIcon></a>
         <Link to="registApp" smooth={true} offset={200} duration={500}><FontAwesomeIcon icon={faCircleArrowDown} ></FontAwesomeIcon></Link>
         <Link to="presentacion" smooth={true} offset={-100} duration={500}><FontAwesomeIcon icon={faCircleArrowUp} ></FontAwesomeIcon></Link>
       </div>
