@@ -16,14 +16,14 @@
                           'embedded-opentype', and 'svg' */                 
 }
 @font-face{
-  font-family: 'Title-1';
-  src: local('Title-1'), url(./assets/fonts/PPNeueMachina-PlainUltraboldItalic.otf) format('opentype');             
+  font-family: 'Title';
+  src: local('Title'), url(./assets/fonts/PPNeueMachina-PlainUltraboldItalic.otf) format('opentype');             
 }
 @font-face {
   font-family: 'Text';
   src: local('Text'), url(./assets/fonts/PPNeueMontreal-Medium.otf) format('opentype');
 }
 @font-face {
-  font-family: 'Title';
-  src: local('Title'), url(./assets/fonts/PPNeueMontreal-Bold.otf) format('opentype');  
+  font-family: 'Title-1';
+  src: local('Title-1'), url(./assets/fonts/PPNeueMontreal-Bold.otf) format('opentype');  
 }
