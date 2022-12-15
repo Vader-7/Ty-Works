@@ -1,2 +1,4 @@
-# ...
-My portafolio :)
+# My portafolio :)
+
+- npm install
+- npm run dev
