@@ -25,7 +25,10 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px; 
+  /*bring footer to front*/
+  z-index: 1;
 }
+
 /*add space between links icons*/
 Link{
   margin: 0 10px;
@@ -52,7 +55,12 @@ Link{
   flex-direction: column;
 }
 #registApp{
-  padding-top: 30px;
+  z-index: -1;
+  height: 100vh;
+  /*align in the middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   flex-direction: column;
 }

@@ -18,16 +18,18 @@ import {  faMobile,
 import { Link } from 'react-scroll'
 import img from '/images/Subtract.jpg'
 import qr from '/images/frame.png'
+import { animated } from '@react-spring/web'
 
 
 function App() {
   // Create your instance
   const gradient = new Gradient()      
   gradient.initGradient('#gradient-canvas')
+  document.body.style.overflow='hidden'
   const [count, setCount] = useState(0)
   return (
     <div className="App">
-      <div id='footer'>
+      <div id='footer' className='backdrop-blur-md backdrop-brightness-150 md:backdrop-filter-none'>
         <a href="https://github.com/Vader-7" target='_blank'><FontAwesomeIcon icon={faGithub} ></FontAwesomeIcon></a>
         <a href="https://twitter.com/elonmusk" target='_blank'><FontAwesomeIcon icon={faLinkedin} ></FontAwesomeIcon></a>
         <Link to="registApp" smooth={true} offset={200} duration={1500}>RegistApp</Link>
@@ -41,7 +43,7 @@ function App() {
             <p id='about'>I'm Tyler a CS student from Chile and i like programming</p>
           </div>
         </div>
-        <div className='content' id='registApp'>
+        <div className='content; backdrop-blur-sm bg-white/20' id='registApp'>
           <div className='container'>
             <h1 id='title'>RegistApp</h1>
             <p id='about'>I made an application for the students of my university to mark attendance using a QR code with IONIC using Angular.

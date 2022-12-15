@@ -607,6 +607,52 @@
   dependencies:
     "@babel/runtime" "^7.6.2"
 
+"@react-spring/animated@~9.6.0":
+  "integrity" "sha512-YFBLQ3bnGlUaWA9eVcZ7K1nfgVSF30XPfwqag5hlswYcMi7C5zVriFqN4oxRyDAFHfmNpPfFCRHmgP52L3GF1A=="
+  "resolved" "https://registry.npmjs.org/@react-spring/animated/-/animated-9.6.0.tgz"
+  "version" "9.6.0"
+  dependencies:
+    "@react-spring/shared" "~9.6.0"
+    "@react-spring/types" "~9.6.0"
+
+"@react-spring/core@~9.6.0":
+  "integrity" "sha512-CCU6MOp6Hk29qFhC+8/Hty5Rh8b4TcHvLjFX1GP9i2iXvw77WayRyy+Wi+KCt+RD+xXO2fi9bNWcloOHPHJp/g=="
+  "resolved" "https://registry.npmjs.org/@react-spring/core/-/core-9.6.0.tgz"
+  "version" "9.6.0"
+  dependencies:
+    "@react-spring/animated" "~9.6.0"
+    "@react-spring/rafz" "~9.6.0"
+    "@react-spring/shared" "~9.6.0"
+    "@react-spring/types" "~9.6.0"
+
+"@react-spring/rafz@~9.6.0":
+  "integrity" "sha512-Vw8IwWXWEMszef8V/yemSR8YZe4cbX84JrMMuW+UE5Ha1/mOCznlFU59fKJxQQA/UJlfY70K9oZ+aboFgWWk0g=="
+  "resolved" "https://registry.npmjs.org/@react-spring/rafz/-/rafz-9.6.0.tgz"
+  "version" "9.6.0"
+
+"@react-spring/shared@~9.6.0":
+  "integrity" "sha512-Kama7SJiAajZsjfTJAxLDndxeYr0Qin6Ust9Wn/gRCVC1maXJ79Su0gsQYapSA0+Nmkxdi+RiXJUDmGX6LMuuw=="
+  "resolved" "https://registry.npmjs.org/@react-spring/shared/-/shared-9.6.0.tgz"
+  "version" "9.6.0"
+  dependencies:
+    "@react-spring/rafz" "~9.6.0"
+    "@react-spring/types" "~9.6.0"
+
+"@react-spring/types@~9.6.0":
+  "integrity" "sha512-XOWupgf+/rMhQTiIxZzjVRw+4ZNkXcO5tuha3pOBNK88a7LPGjM6imdS1aQ2kl3y1sBy0f9JrclNShfASbkvTw=="
+  "resolved" "https://registry.npmjs.org/@react-spring/types/-/types-9.6.0.tgz"
+  "version" "9.6.0"
+
+"@react-spring/web@^9.6.0":
+  "integrity" "sha512-ztdkBmRZB020MEPEU8gXlbkE6858/IdA2P37RvcjOHq4tEpIizrsh/XTipU+T5iyrbT6UQLnh4JnIWow4jfOmg=="
+  "resolved" "https://registry.npmjs.org/@react-spring/web/-/web-9.6.0.tgz"
+  "version" "9.6.0"
+  dependencies:
+    "@react-spring/animated" "~9.6.0"
+    "@react-spring/core" "~9.6.0"
+    "@react-spring/shared" "~9.6.0"
+    "@react-spring/types" "~9.6.0"
+
 "@restart/hooks@^0.4.6", "@restart/hooks@^0.4.7":
   "integrity" "sha512-ZbjlEHcG+FQtpDPHd7i4FzNNvJf2enAwZfJbpM8CW7BhmOAbsHpZe3tsHwfQUrBuyrxWqPYp2x5UMnilWcY22A=="
   "resolved" "https://registry.npmjs.org/@restart/hooks/-/hooks-0.4.7.tgz"
