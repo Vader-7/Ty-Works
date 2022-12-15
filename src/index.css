@@ -21,9 +21,9 @@
 }
 @font-face {
   font-family: 'Text';
-  src: local('Text'), url(./assets/fonts/PPNeueMontreal-Book.otf) format('opentype');
+  src: local('Text'), url(./assets/fonts/PPNeueMontreal-Medium.otf) format('opentype');
 }
 @font-face {
   font-family: 'Title';
-  src: local('Title'), url(./assets/fonts/PPNeueMontreal-SemiBolditalic.otf) format('opentype');  
+  src: local('Title'), url(./assets/fonts/PPNeueMontreal-Bold.otf) format('opentype');  
 }
