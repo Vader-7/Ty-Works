@@ -13,7 +13,9 @@ import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/
 import {  faMobile,
           faPhone,
           faR,
-          faHouse 
+          faHouse,
+          faCircleArrowDown,
+          faCircleArrowUp,
        } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-scroll'
 import img from '/images/Subtract.jpg'
@@ -32,8 +34,8 @@ function App() {
       <div id='footer' className='backdrop-blur-md backdrop-brightness-150 md:backdrop-filter-none'>
         <a href="https://github.com/Vader-7" target='_blank'><FontAwesomeIcon icon={faGithub} ></FontAwesomeIcon></a>
         <a href="https://twitter.com/elonmusk" target='_blank'><FontAwesomeIcon icon={faLinkedin} ></FontAwesomeIcon></a>
-        <Link to="registApp" smooth={true} offset={200} duration={500}>RegistApp</Link>
-        <Link to="presentacion" smooth={true} offset={-100} duration={500}><FontAwesomeIcon icon={faHouse} ></FontAwesomeIcon></Link>
+        <Link to="registApp" smooth={true} offset={200} duration={500}><FontAwesomeIcon icon={faCircleArrowDown} ></FontAwesomeIcon></Link>
+        <Link to="presentacion" smooth={true} offset={-100} duration={500}><FontAwesomeIcon icon={faCircleArrowUp} ></FontAwesomeIcon></Link>
       </div>
       <main>
         <div className='content' id='presentacion'> 
@@ -46,10 +48,8 @@ function App() {
         <div className='content; backdrop-blur-sm bg-white/30' id='registApp'>
           <div className='container'>
             <h1 id='title'>RegistApp</h1>
-            <p id='about'>I made an application for the students of my university to mark attendance using a QR code with IONIC using Angular.
             <br />
-            <br />
-            I'm still working on it...</p>
+            <p id='about'>I made an application for the students of my university to mark attendance using a QR code with IONIC using Angular.</p>
           </div>
           <div id='logos' className='container'>
             <div className='right-div'>

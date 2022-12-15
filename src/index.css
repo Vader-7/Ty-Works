@@ -10,15 +10,20 @@
   -webkit-text-size-adjust: 100%;
 }
 @font-face{
-  font-family: 'Text';
-  src: local('Text'), url(./assets/fonts/PPNeueMachina-PlainRegular.otf) format('opentype');
+  font-family: 'Text-1';
+  src: local('Text-1'), url(./assets/fonts/PPNeueMachina-PlainRegular.otf) format('opentype');
   /* other formats include: 'woff2', 'truetype, 'opentype',
                           'embedded-opentype', and 'svg' */                 
 }
-
 @font-face{
+  font-family: 'Title-1';
+  src: local('Title-1'), url(./assets/fonts/PPNeueMachina-PlainUltraboldItalic.otf) format('opentype');             
+}
+@font-face {
+  font-family: 'Text';
+  src: local('Text'), url(./assets/fonts/PPNeueMontreal-Book.otf) format('opentype');
+}
+@font-face {
   font-family: 'Title';
-  src: local('Title'), url(./assets/fonts/PPNeueMachina-PlainUltraboldItalic.otf) format('opentype');
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                          'embedded-opentype', and 'svg' */                 
+  src: local('Title'), url(./assets/fonts/PPNeueMontreal-SemiBolditalic.otf) format('opentype');  
 }
