@@ -53,7 +53,7 @@ function App() {
           </div>
           <div id='logos' className='container'>
             <div className='right-div'>
-              <a href="https://drive.google.com/file/d/1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF/view?usp=share_link"><img src={img} alt=""></img></a>
+              <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF"><img src={img} alt=""></img></a>
             </div>
             <div className='left-div'>
               <img src={qr} alt=""></img>
