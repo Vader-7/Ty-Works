@@ -52,7 +52,7 @@ Link{
   flex-direction: column;
 }
 #registApp{
-  padding-top: 70px;
+  padding-top: 30px;
   text-align: center;
   flex-direction: column;
 }
@@ -71,6 +71,11 @@ img{
   width: 200px;
   height: 200px;
   border-radius: 30px;
+  /*add shadow to the image*/
+  box-shadow: 0 0 10px rgba(108, 107, 107, 0.5);
+  /*add border to the image*/
+
+
 }
 #title{
   font-family: 'Title' !important;
