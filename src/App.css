@@ -34,6 +34,7 @@
   bottom: 0;
   font-size: 30px;
 }
+
 #footer i{
   font-size: 30px;
   color: #000000;
@@ -101,6 +102,11 @@ img{
   height: 200px;
   border-radius: 30px;
   box-shadow: 0 0 10px rgba(108, 107, 107, 0.5);
+}
+h#title a:hover{
+  color: #000000;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
 }
 #title{
   font-family: 'Title' !important;

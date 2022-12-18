@@ -18,7 +18,8 @@ import {  faMobile,
           faCircleArrowDown,
           faCircleArrowUp,
           faGripLinesVertical,
-          faChevronCircleRight
+          faChevronCircleRight,
+          faChevronCircleUp
        } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-scroll'
 import img from '/images/Subtract.jpg'
@@ -47,23 +48,13 @@ function App() {
         <a href="http://linkedin.com/in/tylermiranda" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <Link to="proyecto1" smooth={true} offset={2} duration={500}>
-          <FontAwesomeIcon icon={faChevronCircleRight} />
-        </Link>
-        {/*
-        <a>
-          <FontAwesomeIcon id='separador' icon={faGripLinesVertical} />
+        <a onClick={() => parallax.current.scrollTo(0)}>
+          <FontAwesomeIcon icon={faChevronCircleUp} />
         </a>
-        <Link to="proyecto1" smooth={true} offset={200} duration={500}>
-          <FontAwesomeIcon icon={faCircleArrowDown} />
-        </Link>
-        <Link to="presentacion" smooth={true} offset={-100} duration={500}>
-          <FontAwesomeIcon icon={faCircleArrowUp} />
-  </Link>*/}
       </div>
       <ParallaxLayer 
         offset={0} 
-        speed={0.5} 
+        speed={1} 
         factor={2} 
         onClick={() => parallax.current.scrollTo(2)}>
         <div className="content" id="presentacion">
@@ -71,18 +62,17 @@ function App() {
             <h1 id="title">Hello there</h1>
             <br />
             <p id="about">
-            My name is Tyler and I am a FullStack developer. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.
+            My name is Tyler and I am a FullStack developer from Chile. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.
             </p>
             <br />
-            <FontAwesomeIcon id='goingDown' icon={faCircleArrowDown} />
+            <FontAwesomeIcon onClick={() => parallax.current.scrollTo(2)} id='goingDown' icon={faCircleArrowDown} />
           </div>
         </div>
       </ParallaxLayer>
       <ParallaxLayer 
         offset={1} 
-        speed={2} 
-        factor={2}
-        onClick={() => parallax.current.scrollTo(1)}>
+        speed={4} 
+        factor={2}>
         <div className="content" id="proyecto1">
           <div className="container">
             <h1 id="title"><a href="https://github.com/Vader-7/RegistAPP" target="_blank"><FontAwesomeIcon icon={faGithubAlt} /></a> RegistApp</h1>
@@ -94,10 +84,9 @@ function App() {
         </ParallaxLayer>
       <ParallaxLayer 
         offset={1.5} 
-        speed={0.5} 
-        factor={1}
-      >
-          <div id="logos" className="container">
+        speed={1} 
+        factor={2}>
+          <div id="logos" className='container'>
             <div className="right-div">
               <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
                 <img src={img} alt="" />
