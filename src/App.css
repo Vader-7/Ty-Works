@@ -47,6 +47,24 @@ Link{
 }
 #footer a:hover{
   color: #000000;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+#separador{
+  /*null the hover effect*/
+  pointer-events: none;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  bottom: 0;
+  width: auto;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
 .content{
   display: flex;
@@ -85,8 +103,8 @@ img{
   border-radius: 30px;
   /*add shadow to the image*/
   box-shadow: 0 0 10px rgba(108, 107, 107, 0.5);
-  /*add border to the image*/
-
+}
+#slideIcon{
 
 }
 #title{
