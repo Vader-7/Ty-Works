@@ -59,7 +59,7 @@ function App() {
         onClick={() => parallax.current.scrollTo(2)}>
         <div className="content" id="presentacion">
           <div className="container">
-            <h1 id="title">Hello there</h1>
+            <h1 id="titleM">Hello there</h1>
             <br />
             <p id="about">
             My name is Tyler and I am a FullStack developer from Chile. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.

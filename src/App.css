@@ -112,6 +112,11 @@ img{
   font-size: 30px;
   color: #282828;
 }
+#titleM{
+  font-family: 'Title' !important;
+  font-size: 30px;
+  color: #282828;
+}
 #about{
   font-family: 'Text' !important;
   font-weight: 600;
