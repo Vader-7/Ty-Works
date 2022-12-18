@@ -44,7 +44,7 @@ function App() {
         <a>
           <FontAwesomeIcon id='separador' icon={faGripLinesVertical} />
         </a>
-        <Link to="registApp" smooth={true} offset={200} duration={500}>
+        <Link to="proyecto1" smooth={true} offset={200} duration={500}>
           <FontAwesomeIcon icon={faCircleArrowDown} />
         </Link>
         <Link to="presentacion" smooth={true} offset={-100} duration={500}>
@@ -57,17 +57,16 @@ function App() {
             <h1 id="title">Hello there</h1>
             <br />
             <p id="about">
-              I'm Tyler a CS student from Chile and i like programming
+            Welcome to my portfolio! My name is Tyler and I am a FullStack developer. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.
             </p>
           </div>
         </div>
-        <div className="content backdrop-blur-sm bg-white/30" id="registApp">
+        <div className="content backdrop-blur-sm bg-white/30" id="proyecto1">
           <div className="container">
             <h1 id="title">RegistApp</h1>
             <br />
             <p id="about">
-              I made an application for the students of my university to mark
-              attendance using a QR code with IONIC using Angular.
+            It is an application that allows universities to pass assistance via QR, to develop it use Ionic with Angular and FireBase.
             </p>
           </div>
           <div id="logos" className="container">
