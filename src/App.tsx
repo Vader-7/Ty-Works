@@ -57,7 +57,7 @@ function App() {
             <h1 id="title">Hello there</h1>
             <br />
             <p id="about">
-            Welcome to my portfolio! My name is Tyler and I am a FullStack developer. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.
+            My name is Tyler and I am a FullStack developer. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.
             </p>
           </div>
         </div>
