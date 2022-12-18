@@ -7,7 +7,8 @@ import {  faFacebook,
           faInstagram,
           faLinkedin,
           faGithub,
-          faYoutube,    
+          faYoutube, 
+          faGithubAlt   
         } from '@fortawesome/free-brands-svg-icons'
 import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 import {  faMobile,
@@ -23,6 +24,8 @@ import { Link } from 'react-scroll'
 import img from '/images/Subtract.jpg'
 import qr from '/images/frame.png'
 import { animated, useSpring } from '@react-spring/web'
+import { Parallax, ParallaxLayer} from '@react-spring/parallax'
+import { end } from '@popperjs/core'
 
 
 
@@ -30,10 +33,12 @@ function App() {
   // Create your instance
   const gradient = new Gradient()      
   gradient.initGradient('#gradient-canvas')
-  document.body.style.overflow='hidden'
+  //document.body.style.overflow='hidden'
   const [count, setCount] = useState(0)
   return (
     <div className="App">
+      <Parallax pages={2}>
+      <ParallaxLayer offset={0} speed={0.5} sticky={{start: 1, end: 2}}>
       <div id="footer" className="backdrop-blur-md backdrop-brightness-150 md:backdrop-filter-none">
         <a href="https://github.com/Vader-7" target="_blank">
           <FontAwesomeIcon icon={faGithub} />
@@ -41,6 +46,10 @@ function App() {
         <a href="http://linkedin.com/in/tylermiranda" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
+        <Link to="proyecto1" smooth={true} offset={2} duration={500}>
+          <FontAwesomeIcon icon={faChevronCircleRight} />
+        </Link>
+        {/*
         <a>
           <FontAwesomeIcon id='separador' icon={faGripLinesVertical} />
         </a>
@@ -49,9 +58,11 @@ function App() {
         </Link>
         <Link to="presentacion" smooth={true} offset={-100} duration={500}>
           <FontAwesomeIcon icon={faCircleArrowUp} />
-        </Link>
+  </Link>*/}
       </div>
+      </ParallaxLayer>
       <main>
+      <ParallaxLayer offset={0} speed={0.5} factor={2}>
         <div className="content" id="presentacion">
           <div className="container">
             <h1 id="title">Hello there</h1>
@@ -59,11 +70,15 @@ function App() {
             <p id="about">
             My name is Tyler and I am a FullStack developer. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.
             </p>
+            <br />
+            <FontAwesomeIcon id='goingDown' icon={faCircleArrowDown} />
           </div>
         </div>
-        <div className="content backdrop-blur-sm bg-white/30" id="proyecto1">
+      </ParallaxLayer>
+      <ParallaxLayer offset={1} speed={1} factor={4}>
+        <div className="content" id="proyecto1">
           <div className="container">
-            <h1 id="title">RegistApp</h1>
+            <h1 id="title"><a href="https://github.com/Vader-7/RegistAPP" target="_blank"><FontAwesomeIcon icon={faGithubAlt} /></a> RegistApp</h1>
             <br />
             <p id="about">
             QR attendance app is designed to help universities efficiently track student attendance. The app was developed using the Ionic framework and Angular, along with the Firebase backend service.
@@ -81,7 +96,9 @@ function App() {
           </div>
           <br />
         </div>
+        </ParallaxLayer>
       </main>
+      </Parallax>
     </div>
   )}
 export default App

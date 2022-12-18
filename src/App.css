@@ -25,6 +25,15 @@
   border-radius: 10px; 
   z-index: 1;
 }
+#goingDown{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  bottom: 0;
+  font-size: 30px;
+}
 #footer i{
   font-size: 30px;
   color: #000000;
