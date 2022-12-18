@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import './App.css'
 import { Gradient } from './Gradient.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -24,12 +24,14 @@ import { Link } from 'react-scroll'
 import img from '/images/Subtract.jpg'
 import qr from '/images/frame.png'
 import { animated, useSpring } from '@react-spring/web'
-import { Parallax, ParallaxLayer} from '@react-spring/parallax'
+import { IParallax, Parallax, ParallaxLayer} from '@react-spring/parallax'
 import { end } from '@popperjs/core'
+import { refType } from '@mui/utils'
 
 
 
 function App() {
+  const parallax = useRef<IParallax>(null!);
   // Create your instance
   const gradient = new Gradient()      
   gradient.initGradient('#gradient-canvas')
@@ -37,8 +39,7 @@ function App() {
   const [count, setCount] = useState(0)
   return (
     <div className="App">
-      <Parallax pages={2}>
-      <ParallaxLayer offset={0} speed={0.5} sticky={{start: 1, end: 2}}>
+      <Parallax ref={parallax} pages={2} style={{ top: '0', left: '0'}}>
       <div id="footer" className="backdrop-blur-md backdrop-brightness-150 md:backdrop-filter-none">
         <a href="https://github.com/Vader-7" target="_blank">
           <FontAwesomeIcon icon={faGithub} />
@@ -60,9 +61,11 @@ function App() {
           <FontAwesomeIcon icon={faCircleArrowUp} />
   </Link>*/}
       </div>
-      </ParallaxLayer>
-      <main>
-      <ParallaxLayer offset={0} speed={0.5} factor={2}>
+      <ParallaxLayer 
+        offset={0} 
+        speed={0.5} 
+        factor={2} 
+        onClick={() => parallax.current.scrollTo(2)}>
         <div className="content" id="presentacion">
           <div className="container">
             <h1 id="title">Hello there</h1>
@@ -75,15 +78,25 @@ function App() {
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={1} speed={1} factor={4}>
+      <ParallaxLayer 
+        offset={1} 
+        speed={2} 
+        factor={2}
+        onClick={() => parallax.current.scrollTo(1)}>
         <div className="content" id="proyecto1">
           <div className="container">
             <h1 id="title"><a href="https://github.com/Vader-7/RegistAPP" target="_blank"><FontAwesomeIcon icon={faGithubAlt} /></a> RegistApp</h1>
-            <br />
             <p id="about">
             QR attendance app is designed to help universities efficiently track student attendance. The app was developed using the Ionic framework and Angular, along with the Firebase backend service.
             </p>
           </div>
+        </div>
+        </ParallaxLayer>
+      <ParallaxLayer 
+        offset={1.5} 
+        speed={0.5} 
+        factor={1}
+      >
           <div id="logos" className="container">
             <div className="right-div">
               <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
@@ -95,9 +108,7 @@ function App() {
             </div>
           </div>
           <br />
-        </div>
         </ParallaxLayer>
-      </main>
       </Parallax>
     </div>
   )}

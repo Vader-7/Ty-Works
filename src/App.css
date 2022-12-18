@@ -4,7 +4,7 @@
   left: 0;
   z-index: -1;
   width:100%;
-  height: 200vh;
+  height:100%;
   --gradient-color-1: #c3e4ff; 
   --gradient-color-2: #6ec3f4; 
   --gradient-color-3: #eae2ff;  
@@ -54,25 +54,15 @@ Link{
   transform: scale(1.2);
   transition: all 0.3s ease-in-out;
 }
-#separador{
-  pointer-events: none;
-  position: fixed;
-  top: 45%;
-  left: 50%;
-  bottom: 0;
-  width: auto;
-  height: 20px;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
+#footer a:active{
+  color: #000000;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
 }
 .content{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   height: 100vh;
 }
 #presentacion{
@@ -84,28 +74,21 @@ Link{
   padding: 0 10%;
 }
 #proyecto1{
-  z-index: -1;
-  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: top;
+  justify-content: top;
+  text-align: top;
   flex-direction: column;
   padding: 0 10%;
-}
-#proyecto2{
-  z-index: -1;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
+  padding-top: 10%;
 }
 #logos{
   display: flex;
-  padding-top: 10%;
+  align-items: center;
   justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  padding: 0 10%;
 }
 .left-div{
   padding-left: 10%;
