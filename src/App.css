@@ -23,15 +23,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px; 
-  /*bring footer to front*/
   z-index: 1;
 }
-/*make the icons the same size globally*/
 #footer i{
   font-size: 30px;
   color: #000000;
 }
-/*add space between links icons*/
 Link{
   margin: 0 10px;
   color : #000000;
@@ -85,6 +82,7 @@ Link{
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  padding: 0 10%;
 }
 #proyecto2{
   z-index: -1;

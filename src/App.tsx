@@ -66,7 +66,7 @@ function App() {
             <h1 id="title">RegistApp</h1>
             <br />
             <p id="about">
-            It is an application that allows universities to pass assistance via QR, to develop it use Ionic with Angular and FireBase.
+            QR attendance app is designed to help universities efficiently track student attendance. The app was developed using the Ionic framework and Angular, along with the Firebase backend service.
             </p>
           </div>
           <div id="logos" className="container">
