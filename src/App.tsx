@@ -71,7 +71,7 @@ function App() {
       </ParallaxLayer>
       <ParallaxLayer 
         offset={1} 
-        speed={4} 
+        speed={7} 
         factor={2}>
         <div className="content" id="proyecto1">
           <div className="container">
