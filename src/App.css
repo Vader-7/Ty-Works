@@ -103,9 +103,8 @@ img{
   border-radius: 30px;
   box-shadow: 0 0 10px rgba(108, 107, 107, 0.5);
 }
-h#title a:hover{
-  color: #000000;
-  transform: scale(1.2);
+#title:hover{
+  transform: translateX(10px);
   transition: all 0.3s ease-in-out;
 }
 #title{

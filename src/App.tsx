@@ -75,7 +75,7 @@ function App() {
         factor={2}>
         <div className="content" id="proyecto1">
           <div className="container">
-            <h1 id="title"><a href="https://github.com/Vader-7/RegistAPP" target="_blank"><FontAwesomeIcon icon={faGithubAlt} /></a> RegistApp</h1>
+            <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faGithubAlt} /> RegistApp</h1></a>
             <p id="about">
             QR attendance app is designed to help universities efficiently track student attendance. The app was developed using the Ionic framework and Angular, along with the Firebase backend service.
             </p>
