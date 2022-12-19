@@ -21,6 +21,7 @@ import {  faMobile,
           faChevronCircleRight,
           faChevronCircleUp,
           faChevronCircleDown,
+          faChevronCircleLeft
        } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-scroll'
 import img from '/images/Subtract.jpg'
@@ -55,7 +56,8 @@ const Page = ({ offset, gradient, onClick }: PageProps) => (
 function App() {
   const parallax = useRef<IParallax>(null!);
   // Create your instance
-  const gradient = new Gradient()      
+  const gradient = new Gradient()     
+  const [show, setShow] = useState(false);
   gradient.initGradient('#gradient-canvas')
   //document.body.style.overflow='hidden'
   return (
@@ -71,9 +73,9 @@ function App() {
         <a onClick={() => parallax.current.scrollTo(0)}>
           <FontAwesomeIcon icon={faChevronCircleUp} />
         </a>
-        <Link to='2'>
-          <FontAwesomeIcon icon={faChevronCircleRight} />
-        </Link>
+        <a onClick={() => setShow(!show)}>
+          {show === true ?   <FontAwesomeIcon icon={faChevronCircleLeft}/> : <FontAwesomeIcon icon={faChevronCircleRight}/>}
+        </a>
       </div>
       <ParallaxLayer 
         offset={0} 
@@ -85,35 +87,65 @@ function App() {
           <p id="about">
             My name is Tyler and I am a FullStack developer from Chile. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.
           </p>
-          <FontAwesomeIcon onClick={() => parallax.current.scrollTo(2)} id='goingDown' icon={faChevronCircleDown} />
+          <FontAwesomeIcon onClick={() => parallax.current.scrollTo(1)} id='goingDown' icon={faChevronCircleDown} />
       </ParallaxLayer>
-      <ParallaxLayer id="fondo" offset={1}></ParallaxLayer>
-        <ParallaxLayer 
-        className="content; container" 
-        id="proyecto1"
-        offset={1} 
-        speed={-3} 
-        factor={1}>    
-        <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faGithubAlt} /> RegistApp</h1></a>
-        <p id="about">
-          App designed to help universities efficiently track student attendance. The app was developed using the Ionic framework and Angular, along with the Firebase backend service.
-          </p>
-        </ParallaxLayer>
-          <ParallaxLayer 
-          id="logos" 
-          className='container'
-          offset={1}  
-          speed={10} 
-          factor={1.3}>
-          <div className="right-div">
-            <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
-              <img src={img} alt="" />
-            </a>
+      {show ? (
+        <><ParallaxLayer id="fondo" offset={1}></ParallaxLayer><ParallaxLayer
+            className="content; container"
+            id="proyecto1"
+            offset={1}
+            speed={-3}
+            factor={1}>
+            <div>
+              <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faGithubAlt} /> RegistApp</h1></a>
+              <p id="about">
+                App designed to help universities efficiently track student attendance. The app was developed using the Ionic framework and Angular, along with the Firebase backend service.
+              </p>
             </div>
+          </ParallaxLayer><ParallaxLayer
+            id="logos"
+            className='container'
+            offset={1}
+            speed={10}
+            factor={1.3}>
+              <div className="right-div">
+                <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
+                  <img src={img} alt="" />
+                </a>
+              </div>
               <div className="left-div">
                 <img src={qr} alt="" />
               </div>
-          </ParallaxLayer>
+            </ParallaxLayer></>
+          ):(
+        <><ParallaxLayer
+              className="content; container"
+              id="proyecto1"
+              offset={1}
+              speed={-3}
+              factor={1}>
+              <div>
+                <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faGithubAlt} /> LeaFeeling</h1></a>
+                <p id="about">
+                  App designed to help universities efficiently track student attendance. The app was developed using the Ionic framework and Angular, along with the Firebase backend service.
+                </p>
+              </div>
+            </ParallaxLayer><ParallaxLayer
+              id="logos"
+              className='container'
+              offset={1}
+              speed={10}
+              factor={1.3}>
+                <div className="right-div">
+                  <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
+                    <img src={img} alt="" />
+                  </a>
+                </div>
+                <div className="left-div">
+                  <img src={qr} alt="" />
+                </div>
+              </ParallaxLayer></>
+          )}
       </Parallax>
     </div>
   )}
