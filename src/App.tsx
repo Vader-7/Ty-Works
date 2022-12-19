@@ -62,7 +62,7 @@ function App() {
     <div className="App">
       <Parallax ref={parallax} pages={2} style={{ top: '0', left: '0'}}>
       <div id="footer" className="backdrop-blur-md backdrop-brightness-150 md:backdrop-filter-none">
-        <a href="https://github.com/Vader-7" target="_blank">
+        <a href="https://github.com/Vader-7">
           <FontAwesomeIcon icon={faGithub} />
         </a>
         <a href="http://linkedin.com/in/tylermiranda" target="_blank">
