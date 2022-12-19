@@ -54,7 +54,7 @@ function App() {
       </div>
       <ParallaxLayer 
         offset={0} 
-        speed={1} 
+        speed={3} 
         factor={1} 
         onClick={() => parallax.current.scrollTo(2)}>
         <div className="content" id="presentacion" >
@@ -69,17 +69,26 @@ function App() {
         </div>
       </ParallaxLayer>
         <ParallaxLayer 
+        className="content" 
+        id="proyecto1"
         offset={1} 
-        speed={5} 
-        factor={1} className="content" id="proyecto1">    
+        speed={-3} 
+        factor={1} 
+        >    
         <div className="container" >
             <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faGithubAlt} /> RegistApp</h1></a>
             <p id="about">
             QR attendance app is designed to help universities efficiently track student attendance. The app was developed using the Ionic framework and Angular, along with the Firebase backend service.
             </p>
-            </div>
+        </div>
         </ParallaxLayer>
-          <ParallaxLayer id="logos" className='container' speed={1} offset={1} factor={1.4}>
+          <ParallaxLayer 
+          id="logos" 
+          className='container'
+          offset={1}  
+          speed={10} 
+          factor={1.4}
+          >
               <div className="right-div">
                 <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
                   <img src={img} alt="" />
