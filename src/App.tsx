@@ -56,38 +56,32 @@ function App() {
         offset={0} 
         speed={3} 
         factor={1} 
-        onClick={() => parallax.current.scrollTo(2)}>
-        <div className="content" id="presentacion" >
-          <div className="container">
+        onClick={() => parallax.current.scrollTo(2)} className="content;container" id="presentacion">
             <h1 id="titleM">Hello there</h1>
             <br />
             <p id="about">
             My name is Tyler and I am a FullStack developer from Chile. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.
             </p>
             <FontAwesomeIcon onClick={() => parallax.current.scrollTo(2)} id='goingDown' icon={faChevronCircleDown} />
-          </div>
-        </div>
       </ParallaxLayer>
         <ParallaxLayer 
-        className="content" 
+        className="content; container" 
         id="proyecto1"
         offset={1} 
         speed={-3} 
         factor={1} 
         >    
-        <div className="container" >
-            <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faGithubAlt} /> RegistApp</h1></a>
-            <p id="about">
+          <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faGithubAlt} /> RegistApp</h1></a>
+          <p id="about">
             QR attendance app is designed to help universities efficiently track student attendance. The app was developed using the Ionic framework and Angular, along with the Firebase backend service.
-            </p>
-        </div>
+          </p>
         </ParallaxLayer>
           <ParallaxLayer 
           id="logos" 
           className='container'
           offset={1}  
           speed={10} 
-          factor={1.4}
+          factor={1.3}
           >
               <div className="right-div">
                 <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
