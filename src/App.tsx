@@ -27,10 +27,30 @@ import img from '/images/Subtract.jpg'
 import qr from '/images/frame.png'
 import { animated, useSpring } from '@react-spring/web'
 import { IParallax, Parallax, ParallaxLayer} from '@react-spring/parallax'
-import { end } from '@popperjs/core'
-import { refType } from '@mui/utils'
+import styles from './styles.module.css'
 
 
+interface PageProps {
+  offset: number
+  gradient: string
+  onClick: () => void
+}
+
+const Page = ({ offset, gradient, onClick }: PageProps) => (
+  <>
+    <ParallaxLayer offset={offset} speed={0.2} onClick={onClick}>
+      <div className={styles.slopeBegin} />
+    </ParallaxLayer>
+
+    <ParallaxLayer offset={offset} speed={0.6} onClick={onClick}>
+      <div className={`${styles.slopeEnd} ${styles[gradient]}`} />
+    </ParallaxLayer>
+
+    <ParallaxLayer className={`${styles.text} ${styles.number}`} offset={offset} speed={0.3}>
+      <span>0{offset + 1}</span>
+    </ParallaxLayer>
+  </>
+)
 
 function App() {
   const parallax = useRef<IParallax>(null!);
@@ -51,6 +71,9 @@ function App() {
         <a onClick={() => parallax.current.scrollTo(0)}>
           <FontAwesomeIcon icon={faChevronCircleUp} />
         </a>
+        <Link to='2'>
+          <FontAwesomeIcon icon={faChevronCircleRight} />
+        </Link>
       </div>
       <ParallaxLayer 
         offset={0} 
@@ -64,6 +87,7 @@ function App() {
           </p>
           <FontAwesomeIcon onClick={() => parallax.current.scrollTo(2)} id='goingDown' icon={faChevronCircleDown} />
       </ParallaxLayer>
+      <ParallaxLayer id="fondo" offset={1}></ParallaxLayer>
         <ParallaxLayer 
         className="content; container" 
         id="proyecto1"
