@@ -1,3 +1,5 @@
+const { default: zIndex } = require('@mui/material/styles/zIndex');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [

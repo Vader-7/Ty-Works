@@ -19,7 +19,8 @@ import {  faMobile,
           faCircleArrowUp,
           faGripLinesVertical,
           faChevronCircleRight,
-          faChevronCircleUp
+          faChevronCircleUp,
+          faChevronCircleDown,
        } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-scroll'
 import img from '/images/Subtract.jpg'
@@ -37,7 +38,6 @@ function App() {
   const gradient = new Gradient()      
   gradient.initGradient('#gradient-canvas')
   //document.body.style.overflow='hidden'
-  const [count, setCount] = useState(0)
   return (
     <div className="App">
       <Parallax ref={parallax} pages={2} style={{ top: '0', left: '0'}}>
@@ -55,49 +55,40 @@ function App() {
       <ParallaxLayer 
         offset={0} 
         speed={1} 
-        factor={2} 
+        factor={1} 
         onClick={() => parallax.current.scrollTo(2)}>
-        <div className="content" id="presentacion">
+        <div className="content" id="presentacion" >
           <div className="container">
             <h1 id="titleM">Hello there</h1>
             <br />
             <p id="about">
             My name is Tyler and I am a FullStack developer from Chile. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.
             </p>
-            <br />
-            <FontAwesomeIcon onClick={() => parallax.current.scrollTo(2)} id='goingDown' icon={faCircleArrowDown} />
+            <FontAwesomeIcon onClick={() => parallax.current.scrollTo(2)} id='goingDown' icon={faChevronCircleDown} />
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer 
+        <ParallaxLayer 
         offset={1} 
-        speed={7} 
-        factor={2}>
-        <div className="content" id="proyecto1">
-          <div className="container">
+        speed={5} 
+        factor={1} className="content" id="proyecto1">    
+        <div className="container" >
             <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faGithubAlt} /> RegistApp</h1></a>
             <p id="about">
             QR attendance app is designed to help universities efficiently track student attendance. The app was developed using the Ionic framework and Angular, along with the Firebase backend service.
             </p>
-          </div>
-        </div>
-        </ParallaxLayer>
-      <ParallaxLayer 
-        offset={1.5} 
-        speed={1} 
-        factor={2}>
-          <div id="logos" className='container'>
-            <div className="right-div">
-              <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
-                <img src={img} alt="" />
-              </a>
             </div>
-            <div className="left-div">
-              <img src={qr} alt="" />
-            </div>
-          </div>
-          <br />
         </ParallaxLayer>
+          <ParallaxLayer id="logos" className='container' speed={1} offset={1} factor={1.4}>
+              <div className="right-div">
+                <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
+                  <img src={img} alt="" />
+                </a>
+              </div>
+              <div className="left-div">
+                <img src={qr} alt="" />
+              </div>
+            </ParallaxLayer>
       </Parallax>
     </div>
   )}
