@@ -26,8 +26,11 @@
   z-index: 2;
 }
 #goingDown{
-  /* add space between the button and the paragraph */
   margin-top: 30px;
+}
+#goingDown:hover{
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
 }
 
 #footer i{
