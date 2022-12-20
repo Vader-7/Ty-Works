@@ -83,17 +83,27 @@ Link{
     padding-bottom: 60% !important;
   }
   #about{
-    font-size: 18px !important;
+    font-size: 19px !important;
   }
   #title{
-    font-size: 22px !important;
+    font-size: 21px !important;
   }
   .logos{
     padding-top : 40% !important;
   }
-  img{
-    width: 50px;
-    height: 50px;
+  .logos img{
+    width: 100px !important;
+    height: 100px !important;  
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #about{
+    font-size: 17px !important;
+  }
+  .logos img{
+    width: 64px !important;
+    height: 64px !important;
   }
 }
 .logos{
