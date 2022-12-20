@@ -93,26 +93,22 @@ function App() {
           </p>
           <FontAwesomeIcon onClick={() => parallax.current.scrollTo(1)} id='goingDown' icon={faChevronCircleDown} />
       </ParallaxLayer>
-      <ParallaxLayer id="fondo" offset={1}></ParallaxLayer>
       {show ? (
         <><ParallaxLayer
-            className="content; container"
-            id="proyecto1"
+            className="proyecto"
             offset={1}
-            speed={-3}
+            speed={-30}
             factor={1}>
-            <div>
               <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faQrcode} /> RegistApp</h1></a>
               <p id="about">
-                This app was designed to help universities efficiently track and monitor the attendance of their students. It was developed using the Ionic framework, which is a powerful tool for creating cross-platform mobile applications, and Angular, a popular JavaScript framework for building web applications. The app is also connected to the Firebase backend service, which allows us to easily store and retrieve data.
+                This app was designed to help universities efficiently track and monitor the attendance of their students. It was developed using the Ionic framework, which is a powerful tool for creating cross-platform mobile applications, and Angular. The app is also connected to the Firebase backend service.
               </p>
-            </div>
-          </ParallaxLayer><ParallaxLayer
-            id="logos"
-            className='container'
-            offset={1}
-            speed={10}
-            factor={1.3}>
+              </ParallaxLayer>
+            <ParallaxLayer 
+              className="logos" 
+              offset={1} 
+              speed={10} 
+              factor={1.2}>
               <div className="right-div">
                 <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
                   <img src={img} alt="" />
@@ -121,30 +117,19 @@ function App() {
               <div className="left-div">
                 <img src={qr} alt="" />
               </div>
-            </ParallaxLayer></>
+              </ParallaxLayer>
+            </>
           ):(
-        <><ParallaxLayer
-              className="content; container"
-              id="proyecto2"
-              offset={1}
-              speed={-3}
-              factor={1}>
-              <div>
+        <>
+          <ParallaxLayer
+              className='proyecto'>
                 <a href="https://github.com/Vader-7/LeaFeeling" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faLeaf} /> LeaFeeling</h1></a>
                 <p id="about">
-                Web page for selling plants and flowers! This page was built using Django, a powerful web framework written in Python, and connected to Oracle Cloud, a cloud computing platform for storing and managing data.
-                <br />
-                <br />
-                All of the data displayed on the page is retrieved from Oracle Cloud database using Django's ORM (Object-Relational Mapper).
+                This page was built using Django, a powerful web framework written in Python, and connected to Oracle Cloud, a cloud computing platform for storing and managing data. <br /> <br /> All of the data displayed on the page is retrieved from Oracle Cloud database using Django's ORM (Object-Relational Mapper).
                 </p>
-              </div>
             </ParallaxLayer>
             <ParallaxLayer
-            id="logos"
-            className='container'
-            offset={1}
-            speed={10}
-            factor={1.3}>
+            className="logos">
               <div className="right-div">
                 <a href="https://github.com/Vader-7/LeaFeeling">
                   <img src={leafLogo} alt="" />

@@ -59,12 +59,6 @@ Link{
   transform: scale(1.2);
   transition: all 0.3s ease-in-out;
 }
-.content{
-  display: flex;
-  align-items: center;
-  justify-content: top;
-  height: 100vh;
-}
 #presentacion{
   display: flex;
   align-items: center;
@@ -73,46 +67,29 @@ Link{
   flex-direction: column;
   padding: 0 10%;
 }
-#proyecto1{
-  display: flex;
-  align-items: top;
-  justify-content: top;
-  text-align: top;
-  flex-direction: column;
+.proyecto{
+  /*center and dont touch the top*/
+  align-items: center;
   padding: 0 10%;
   padding-top: 10%;
-  z-index: 2;
+  z-index: 1;
 }
-#proyecto2{
-  display: flex;
-  align-items: top;
-  justify-content: top;
-  text-align: top;
-  flex-direction: column;
-  padding: 0 10%;
-  padding-top: 10%;
-  z-index: 2;
+@media screen and (max-width: 768px) {
+  #about{
+    font-size: 15px !important;
+  }
+  .logos{
+    padding-bottom: 2% !important;
+    padding-top : 10% !important;
+  }
 }
-#fondo{
-  /* add blur */
-  background: #ffffff83;
-  filter: blur(10px);
-  /* add brightness */
-  filter: brightness(30%);
-  /* add contrast */
-  filter: contrast(200%);
-  /* add grayscale */
-  filter: grayscale(70%);
-}
-#logos{
+.logos{
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  flex-direction: row;
   padding: 0 10%;
-  padding-top: 0 10%;
-  z-index: 0;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 .left-div{
   padding-left: 10%;
@@ -127,13 +104,12 @@ img{
   box-shadow: 0 0 10px rgba(108, 107, 107, 0.5);
   max-width: 100%;
   height: auto;
+  border-color: white;
+  border-width: 2px;
 }
 #title:hover{
   transform: translateX(10px);
   transition: all 0.3s ease-in-out;
-}
-.ParallaxLayer, .Parallax{
-  pointer-events: auto !important;
 }
 #title{
   font-family: 'Title' !important;
