@@ -64,7 +64,6 @@ function App() {
   const [show, setShow] = useState(true);
   const props = useSpring({ opacity: 1, from: { opacity: 0 } })
   gradient.initGradient('#gradient-canvas')
-  //document.body.style.overflow='hidden'
   return (
     <div className="App">
       <Parallax ref={parallax} pages={2} style={{ top: '0', left: '0'}}>
@@ -105,7 +104,7 @@ function App() {
             <div>
               <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faQrcode} /> RegistApp</h1></a>
               <p id="about">
-                App designed to help universities efficiently track student attendance. The app was developed using the Ionic framework and Angular, along with the Firebase backend service.
+                This app was designed to help universities efficiently track and monitor the attendance of their students. It was developed using the Ionic framework, which is a powerful tool for creating cross-platform mobile applications, and Angular, a popular JavaScript framework for building web applications. The app is also connected to the Firebase backend service, which allows us to easily store and retrieve data.
               </p>
             </div>
           </ParallaxLayer><ParallaxLayer
@@ -133,8 +132,10 @@ function App() {
               <div>
                 <a href="https://github.com/Vader-7/LeaFeeling" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faLeaf} /> LeaFeeling</h1></a>
                 <p id="about">
-                  E-commerce web page with Django connected to Oracle Cloud, 
-                  .
+                Web page for selling plants and flowers! This page was built using Django, a powerful web framework written in Python, and connected to Oracle Cloud, a cloud computing platform for storing and managing data.
+                <br />
+                <br />
+                All of the data displayed on the page is retrieved from Oracle Cloud database using Django's ORM (Object-Relational Mapper).
                 </p>
               </div>
             </ParallaxLayer>

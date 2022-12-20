@@ -94,10 +94,15 @@ Link{
   z-index: 2;
 }
 #fondo{
-  background: rgba(255, 255, 255, 0.449);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  z-index: -1;
+  /* add blur */
+  background: #ffffff83;
+  filter: blur(10px);
+  /* add brightness */
+  filter: brightness(30%);
+  /* add contrast */
+  filter: contrast(200%);
+  /* add grayscale */
+  filter: grayscale(70%);
 }
 #logos{
   display: flex;
@@ -107,7 +112,7 @@ Link{
   flex-direction: row;
   padding: 0 10%;
   padding-top: 0 10%;
-  z-index: 0;
+  z-index: 2;
 }
 .left-div{
   padding-left: 10%;
