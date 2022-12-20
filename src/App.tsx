@@ -21,11 +21,14 @@ import {  faMobile,
           faChevronCircleRight,
           faChevronCircleUp,
           faChevronCircleDown,
-          faChevronCircleLeft
+          faChevronCircleLeft,
+          faLeaf
        } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-scroll'
 import img from '/images/Subtract.jpg'
+import leafLogo from '/images/LeaFeeling.jpg'
 import qr from '/images/frame.png'
+import GitHub from '/images/github.jpg'
 import { animated, useSpring } from '@react-spring/web'
 import { IParallax, Parallax, ParallaxLayer} from '@react-spring/parallax'
 import styles from './styles.module.css'
@@ -57,7 +60,7 @@ function App() {
   const parallax = useRef<IParallax>(null!);
   // Create your instance
   const gradient = new Gradient()     
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   gradient.initGradient('#gradient-canvas')
   //document.body.style.overflow='hidden'
   return (
@@ -74,7 +77,7 @@ function App() {
           <FontAwesomeIcon icon={faChevronCircleUp} />
         </a>
         <a onClick={() => setShow(!show)}>
-          {show === true ?   <FontAwesomeIcon icon={faChevronCircleLeft}/> : <FontAwesomeIcon icon={faChevronCircleRight}/>}
+          {show === true ?  <FontAwesomeIcon icon={faChevronCircleRight}/> : <FontAwesomeIcon icon={faChevronCircleLeft}/>}
         </a>
       </div>
       <ParallaxLayer 
@@ -89,15 +92,16 @@ function App() {
           </p>
           <FontAwesomeIcon onClick={() => parallax.current.scrollTo(1)} id='goingDown' icon={faChevronCircleDown} />
       </ParallaxLayer>
+      <ParallaxLayer id="fondo" offset={1}></ParallaxLayer>
       {show ? (
-        <><ParallaxLayer id="fondo" offset={1}></ParallaxLayer><ParallaxLayer
+        <><ParallaxLayer
             className="content; container"
             id="proyecto1"
             offset={1}
             speed={-3}
             factor={1}>
             <div>
-              <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faGithubAlt} /> RegistApp</h1></a>
+              <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faMobile} /> RegistApp</h1></a>
               <p id="about">
                 App designed to help universities efficiently track student attendance. The app was developed using the Ionic framework and Angular, along with the Firebase backend service.
               </p>
@@ -120,31 +124,34 @@ function App() {
           ):(
         <><ParallaxLayer
               className="content; container"
-              id="proyecto1"
+              id="proyecto2"
               offset={1}
               speed={-3}
               factor={1}>
               <div>
-                <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faGithubAlt} /> LeaFeeling</h1></a>
+                <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faLeaf} /> LeaFeeling</h1></a>
                 <p id="about">
-                  App designed to help universities efficiently track student attendance. The app was developed using the Ionic framework and Angular, along with the Firebase backend service.
+                  Ecomerce web app with django connected to Oracle Cloud.
                 </p>
               </div>
-            </ParallaxLayer><ParallaxLayer
-              id="logos"
-              className='container'
-              offset={1}
-              speed={10}
-              factor={1.3}>
-                <div className="right-div">
-                  <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
-                    <img src={img} alt="" />
-                  </a>
-                </div>
-                <div className="left-div">
-                  <img src={qr} alt="" />
-                </div>
-              </ParallaxLayer></>
+            </ParallaxLayer>
+            <ParallaxLayer
+            id="logos"
+            className='container'
+            offset={1}
+            speed={10}
+            factor={1.3}>
+              <div className="right-div">
+                <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
+                  <img src={leafLogo} alt="" />
+                </a>
+              </div>
+              <div className="left-div">
+              <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
+                  <img src={GitHub} alt="" />
+                </a>
+              </div>
+            </ParallaxLayer></>
           )}
       </Parallax>
     </div>
