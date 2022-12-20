@@ -93,6 +93,7 @@ function App() {
           </p>
           <FontAwesomeIcon onClick={() => parallax.current.scrollTo(1)} id='goingDown' icon={faChevronCircleDown} />
       </ParallaxLayer>
+      <ParallaxLayer id='fondo' offset={1} speed={0.5} factor={1}/>
       {show ? (
         <><ParallaxLayer
             className="proyecto"

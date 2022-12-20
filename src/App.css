@@ -67,6 +67,10 @@ Link{
   flex-direction: column;
   padding: 0 10%;
 }
+#fondo{
+  background-color: #ffffff;
+  z-index: -1;
+}
 .proyecto{
   /*center and dont touch the top*/
   align-items: center;
@@ -82,7 +86,7 @@ Link{
     font-size: 18px !important;
   }
   #title{
-    font-size: 20px !important;
+    font-size: 22px !important;
   }
   .logos{
     padding-top : 40% !important;
@@ -98,6 +102,7 @@ Link{
   justify-content: center;
   padding: 0 10%;
   padding-top: 10%;
+  z-index: 1;
 }
 .left-div{
   padding-left: 10%;
