@@ -22,7 +22,8 @@ import {  faMobile,
           faChevronCircleUp,
           faChevronCircleDown,
           faChevronCircleLeft,
-          faLeaf
+          faLeaf,
+          faQrcode
        } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-scroll'
 import img from '/images/Subtract.jpg'
@@ -61,6 +62,7 @@ function App() {
   // Create your instance
   const gradient = new Gradient()     
   const [show, setShow] = useState(true);
+  const props = useSpring({ opacity: 1, from: { opacity: 0 } })
   gradient.initGradient('#gradient-canvas')
   //document.body.style.overflow='hidden'
   return (
@@ -101,7 +103,7 @@ function App() {
             speed={-3}
             factor={1}>
             <div>
-              <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faMobile} /> RegistApp</h1></a>
+              <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faQrcode} /> RegistApp</h1></a>
               <p id="about">
                 App designed to help universities efficiently track student attendance. The app was developed using the Ionic framework and Angular, along with the Firebase backend service.
               </p>
@@ -131,7 +133,7 @@ function App() {
               <div>
                 <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faLeaf} /> LeaFeeling</h1></a>
                 <p id="about">
-                  Ecomerce web app with django connected to Oracle Cloud.
+                  Ecomerce web app with Django connected to Oracle Cloud.
                 </p>
               </div>
             </ParallaxLayer>
@@ -142,7 +144,7 @@ function App() {
             speed={10}
             factor={1.3}>
               <div className="right-div">
-                <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
+                <a href="">
                   <img src={leafLogo} alt="" />
                 </a>
               </div>
