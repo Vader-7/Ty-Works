@@ -34,29 +34,6 @@ import { animated, useSpring } from '@react-spring/web'
 import { IParallax, Parallax, ParallaxLayer} from '@react-spring/parallax'
 import styles from './styles.module.css'
 
-
-interface PageProps {
-  offset: number
-  gradient: string
-  onClick: () => void
-}
-
-const Page = ({ offset, gradient, onClick }: PageProps) => (
-  <>
-    <ParallaxLayer offset={offset} speed={0.2} onClick={onClick}>
-      <div className={styles.slopeBegin} />
-    </ParallaxLayer>
-
-    <ParallaxLayer offset={offset} speed={0.6} onClick={onClick}>
-      <div className={`${styles.slopeEnd} ${styles[gradient]}`} />
-    </ParallaxLayer>
-
-    <ParallaxLayer className={`${styles.text} ${styles.number}`} offset={offset} speed={0.3}>
-      <span>0{offset + 1}</span>
-    </ParallaxLayer>
-  </>
-)
-
 function App() {
   const parallax = useRef<IParallax>(null!);
   // Create your instance
@@ -94,7 +71,7 @@ function App() {
           <FontAwesomeIcon onClick={() => parallax.current.scrollTo(1)} id='goingDown' icon={faChevronCircleDown} />
       </ParallaxLayer>
       <ParallaxLayer id='fondo' offset={1} speed={0.5} factor={1}/>
-      {show ? (
+      {show ? (  
         <><ParallaxLayer
             className="proyecto"
             offset={1}

@@ -68,14 +68,15 @@ Link{
   padding: 0 10%;
 }
 #fondo{
-  background-color: #ffffff;
+  background:#ffffff69;
   z-index: -1;
+  
 }
 .proyecto{
   /*center and dont touch the top*/
   align-items: center;
   padding: 0 10%;
-  padding-top: 10%;
+  padding-top: 7%;
   z-index: 1;
 }
 @media screen and (max-width: 768px) {
@@ -86,14 +87,10 @@ Link{
     font-size: 19px !important;
   }
   #title{
-    font-size: 21px !important;
+    font-size: 25px !important;
   }
   .logos{
     padding-top : 40% !important;
-  }
-  .logos img{
-    width: 100px !important;
-    height: 100px !important;  
   }
 }
 
@@ -112,6 +109,7 @@ Link{
   justify-content: center;
   padding: 0 10%;
   padding-top: 10%;
+  padding-bottom: 15%;
   z-index: 1;
 }
 .left-div{
@@ -149,4 +147,8 @@ img{
   font-weight: 600;
   font-size: 20px;
   color: rgb(0, 0, 0);
+}
+.slopeEnd {
+  /* other styles */
+  transition: all 0.5s ease-in-out;
 }
