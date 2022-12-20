@@ -131,9 +131,10 @@ function App() {
               speed={-3}
               factor={1}>
               <div>
-                <a href="https://github.com/Vader-7/RegistAPP" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faLeaf} /> LeaFeeling</h1></a>
+                <a href="https://github.com/Vader-7/LeaFeeling" target="_blank"> <h1 id="title"><FontAwesomeIcon icon={faLeaf} /> LeaFeeling</h1></a>
                 <p id="about">
-                  Ecomerce web app with Django connected to Oracle Cloud.
+                  E-commerce web page with Django connected to Oracle Cloud, 
+                  .
                 </p>
               </div>
             </ParallaxLayer>
@@ -144,12 +145,12 @@ function App() {
             speed={10}
             factor={1.3}>
               <div className="right-div">
-                <a href="">
+                <a href="https://github.com/Vader-7/LeaFeeling">
                   <img src={leafLogo} alt="" />
                 </a>
               </div>
               <div className="left-div">
-              <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
+              <a href="https://github.com/Vader-7/LeaFeeling">
                   <img src={GitHub} alt="" />
                 </a>
               </div>
