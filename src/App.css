@@ -68,12 +68,11 @@ Link{
   padding: 0 10%;
 }
 #fondo{
-  background:#ffffff69;
+  background:#ffffffd5;
   z-index: -1;
   
 }
 .proyecto{
-  /*center and dont touch the top*/
   align-items: center;
   padding: 0 10%;
   padding-top: 7%;
@@ -147,8 +146,4 @@ img{
   font-weight: 600;
   font-size: 20px;
   color: rgb(0, 0, 0);
-}
-.slopeEnd {
-  /* other styles */
-  transition: all 0.5s ease-in-out;
 }
