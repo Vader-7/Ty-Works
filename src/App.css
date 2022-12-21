@@ -18,7 +18,7 @@
   width: auto;
   height: 45px;
   transform: translate(-50%, -50%);
-  background-color: #e5e5e5;
+  background-color: #f3f3f3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,7 @@ Link{
   padding: 0 10%;
 }
 #fondo{
-  background:#ffffff;
+  background:#cfcfcf;
   z-index: -1;
   
 }
