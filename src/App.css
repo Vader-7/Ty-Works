@@ -110,7 +110,7 @@ Link{
   align-items: center;
   justify-content: center;
   padding: 0 10%;
-  padding-top: 10%;
+  padding-top: 15%;
   padding-bottom: 15%;
   z-index: 1;
 }
@@ -134,12 +134,7 @@ img{
   transform: translateX(10px);
   transition: all 0.3s ease-in-out;
 }
-#title{
-  font-family: 'Title' !important;
-  font-size: 30px;
-  color: #282828;
-}
-#titleM{
+#title, #titleM{
   font-family: 'Title' !important;
   font-size: 30px;
   color: #282828;
