@@ -18,11 +18,7 @@
   width: auto;
   height: 45px;
   transform: translate(-50%, -50%);
-  background-color: #ffffff00;
-  /* make it transparent in all devices */
-  background-color: rgba(255, 255, 255, 0.5);
-  /* make it transparent in all devices */
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +35,7 @@
 }
 
 #footer i{
-  font-size: 30px;
+  font-size: 20px;
   color: #000000;
 }
 Link{
@@ -48,7 +44,9 @@ Link{
   font-family: 'Title' !important;
 }
 #footer .svg-inline--fa{
-  font-size: 23px;
+  padding-top: 15%;
+  font-size: 19px;
+  color: #ffffff;
 }
 #footer a{
   font-family: 'Title' !important;
@@ -144,7 +142,7 @@ img{
   color: #000000 !important;
 }
 #about{
-  font-family: 'Text-1' !important;
+  font-family: 'Text' !important;
   font-weight: 600;
   font-size: 20px;
   color: rgb(0, 0, 0);
