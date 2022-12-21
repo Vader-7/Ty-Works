@@ -1,11 +1,9 @@
 <h1 align="center">
-    <samp> Hi I'm Tyler </samp>
+    <samp> My Portafolio :) </samp>
 </h1>
 <p align="center">
     <samp>
         – npm install
-    </samp>
-    <samp>
         – npm run dev
     </samp>
  </p>
