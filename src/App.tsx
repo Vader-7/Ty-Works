@@ -33,7 +33,6 @@ function App() {
   const parallax = useRef<IParallax>(null!);
   const gradient = new Gradient()     
   const [show, setShow] = useState(true);
-  const props = useSpring({ opacity: 1, from: { opacity: 0 } })
   gradient.initGradient('#gradient-canvas')
   return (
     <div className="App">
