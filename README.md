@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center" >
-    Lil' portafolio I made with React Vite and TailwindCSS.
+    Lil' portafolio I made to showcase some of my projects, it was made with <a href="https://vuejs.org/" target="_blank">React</a> and <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>
 </p>
 
 ```
