@@ -19,13 +19,40 @@
   z-index: -1;
   width:100%;
   height:100%;
+  --gradient-color-1: #45535e; 
+  --gradient-color-2: #23516c; 
+  --gradient-color-3: #555060;  
+  --gradient-color-4: #00445a;
+  /* blur the canvas */
+
+}
+.App.light #gradient-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width:100%;
+  height:100%;
+  --gradient-color-1: #c3e4ff; 
+  --gradient-color-2: #6ec3f4; 
+  --gradient-color-3: #eae2ff;  
+  --gradient-color-4: #00a3d7;
+}
+
+
+.App.dark #gradient-canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width:100%;
+  height:100%;
   --gradient-color-1: #697d8d; 
   --gradient-color-2: #32749b; 
   --gradient-color-3: #6d677a;  
   --gradient-color-4: #01698c;
-  /* blur the canvas */
-
 }
+
     
 #footer{
   position: fixed;
