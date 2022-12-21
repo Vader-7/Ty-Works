@@ -4,10 +4,14 @@
     </a></samp>
 </h1>
 
+<p align="center" >
+
 ```
 npm install 
 npm run dev
 ```
+
+</p>
 <h1 align="center">
     <samp>Gallery</samp>
 </h1>
