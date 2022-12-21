@@ -18,7 +18,11 @@
   width: auto;
   height: 45px;
   transform: translate(-50%, -50%);
-  background-color: #f3f3f300;
+  background-color: #ffffff00;
+  /* make it transparent in all devices */
+  background-color: rgba(255, 255, 255, 0.5);
+  /* make it transparent in all devices */
+  background-color: rgba(255, 255, 255, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +75,7 @@ Link{
   padding: 0 10%;
 }
 #fondo{
-  background:#d5d5d5;
+  background:#efefef;
   z-index: -1;
   
 }
