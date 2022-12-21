@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import './App.css'
 import { Gradient } from './Gradient.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -34,13 +34,14 @@ import { animated, useSpring } from '@react-spring/web'
 import { IParallax, Parallax, ParallaxLayer} from '@react-spring/parallax'
 import styles from './styles.module.css'
 
+
+
 function App() {
   const parallax = useRef<IParallax>(null!);
-  // Create your instance
-  const gradient = new Gradient()     
+  const gradient = new Gradient()
+  gradient.initGradient('#gradient-canvas')     
   const [show, setShow] = useState(true);
   const props = useSpring({ opacity: 1, from: { opacity: 0 } })
-  gradient.initGradient('#gradient-canvas')
   return (
     <div className="App">
       <Parallax ref={parallax} pages={2} style={{ top: '0', left: '0'}}>
@@ -65,7 +66,7 @@ function App() {
         onClick={() => parallax.current.scrollTo(2)} className="content;container" id="presentacion">
           <h1 id="titleM">Hello there</h1>
           <br/>
-          <p id="about">
+          <p id="aboutM">
             My name is Tyler and I am a FullStack developer from Chile. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.
           </p>
           <FontAwesomeIcon onClick={() => parallax.current.scrollTo(1)} id='goingDown' icon={faChevronCircleDown} />
