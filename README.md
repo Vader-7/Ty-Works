@@ -2,8 +2,8 @@
     <samp> My Portafolio </samp>
 </h1>
 
-..* npm install
-..* npm run dev
+⋅⋅* npm install
+⋅⋅* npm run dev
 
 <h3 align="center">
     <samp> Portafolio </samp>
