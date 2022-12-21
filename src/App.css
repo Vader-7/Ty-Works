@@ -44,7 +44,7 @@ Link{
   font-family: 'Title' !important;
 }
 #footer .svg-inline--fa{
-  font-size: 25px;
+  font-size: 23px;
 }
 #footer a{
   font-family: 'Title' !important;
@@ -71,7 +71,7 @@ Link{
   padding: 0 10%;
 }
 #fondo{
-  background:#f3f3f3;
+  background:#d5d5d5;
   z-index: -1;
   
 }
