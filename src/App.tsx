@@ -1,11 +1,14 @@
 import { useRef, useState } from 'react'
 import './App.css'
 import { Gradient } from './Gradient.js'
+import  planet  from '/images/icons8-globe.gif'
+import globe from '/images/vite.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faLinkedin,
           faGithub,
         } from '@fortawesome/free-brands-svg-icons'
 import {  faLaptopCode,
+          faGlobe,
           faChevronCircleRight,
           faChevronCircleUp,
           faChevronCircleDown,
@@ -46,6 +49,15 @@ function App() {
           {show === true ?  <FontAwesomeIcon icon={faChevronCircleRight}/> : <FontAwesomeIcon icon={faChevronCircleLeft}/>}
         </a>
       </div>
+      <ParallaxLayer 
+        offset={0} 
+        speed={100} 
+        factor={0}
+        className='planet'>
+          <a href="https://github.com/Vader-7/Ty-Works"> 
+            <FontAwesomeIcon icon={faGlobe}/> Made by Tyler
+          </a>
+      </ParallaxLayer>
       <ParallaxLayer 
         offset={0} 
         speed={3} 

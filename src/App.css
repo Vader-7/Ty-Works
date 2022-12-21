@@ -122,6 +122,23 @@ Link{
 .right-div{
   padding-right: 10%;
 }
+.planet {
+  font-size: 12px;
+  font-family: 'Text-1';
+  border: none;
+  box-shadow: none;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  padding-left: 3%;
+  padding-top: 10px;
+  z-index: 3;
+}
+.planet .svg-inline--fa:hover{
+  transform: translateY(30px);
+  transition: all 0.3s ease-in-out;
+}
+
 img{
   width: 200px;
   height: 200px;
