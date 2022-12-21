@@ -1,12 +1,10 @@
 <h1 align="center">
-    <samp> My Portafolio :) </samp>
+    <samp> My Portafolio </samp>
 </h1>
-<p align="center">
     <samp>
         – npm install
         – npm run dev
     </samp>
- </p>
 <h3 align="center">
     <samp> Portafolio </samp>
 </h3>
