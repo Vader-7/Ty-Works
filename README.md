@@ -16,6 +16,7 @@ npm run dev
 
 <h1 align="center">
     <samp>License</samp>
+    [MIT License](LICENSE)
 </h1>
 
-[MIT License](LICENSE)
+
