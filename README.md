@@ -4,8 +4,8 @@
     </a></samp>
 </h1>
 
-  *npm install
-  *npm run dev
+⋅⋅*npm install 
+    npm run dev
 
 
 ## License
