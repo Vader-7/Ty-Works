@@ -5,14 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faLinkedin,
           faGithub,
         } from '@fortawesome/free-brands-svg-icons'
-import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
-import {  faMobile,
-          faPhone,
-          faR,
-          faHouse,
-          faCircleArrowDown,
-          faCircleArrowUp,
-          faGripLinesVertical,
+import {  faLaptopCode,
           faChevronCircleRight,
           faChevronCircleUp,
           faChevronCircleDown,
@@ -21,12 +14,10 @@ import {  faMobile,
           faQrcode,
           faPassport
        } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-scroll'
 import img from '/images/Subtract.jpg'
 import leafLogo from '/images/LeaFeeling.jpg'
 import qr from '/images/frame.png'
 import GitHub from '/images/github.jpg'
-import { useSpring } from '@react-spring/web'
 import { IParallax, Parallax, ParallaxLayer} from '@react-spring/parallax'
 
 
@@ -59,8 +50,8 @@ function App() {
         offset={0} 
         speed={3} 
         factor={1} 
-        onClick={() => parallax.current.scrollTo(2)} className="content;container" id="presentacion">
-          <h1 id="titleM">Hello there</h1>
+        className="content;container" id="presentacion">
+           <a href="https://github.com/Vader-7" onClick={() => parallax.current.update}><h1 id="title"><FontAwesomeIcon icon={faLaptopCode}/> Hello there</h1></a>
           <br/>
           <p id="about">
             My name is Tyler and I am a FullStack developer from Chile. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.
