@@ -85,7 +85,7 @@ function App() {
               speed={10} 
               factor={1.2}>
               <div className="right-div">
-                <a href="https://drive.google.com/uc?export=download&id=1yT4Pcdd-k5uuIdkSh6doWOvuq26NDpOF">
+                <a href="https://github.com/Vader-7/RegistAPP">
                   <img src={img} alt="" />
                 </a>
               </div>
