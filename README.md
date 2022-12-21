@@ -24,7 +24,7 @@ npm run dev
 
 ![PortafolioIMG](https://user-images.githubusercontent.com/66812754/208838587-da9af350-6601-48a4-a53e-45dc66f3d832.jpg)
 
-<h1 align="center">
+<h1 align="start">
     <samp>License</samp>
     
 </h1>
