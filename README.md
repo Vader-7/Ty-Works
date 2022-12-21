@@ -10,11 +10,13 @@
     </samp>
 </p>
 
+<samp>
+
 ```
 npm install 
 npm run dev
 ```
-
+</samp>
 
 <h1 align="center">
     <samp>Gallery</samp>
