@@ -6,7 +6,7 @@
 
 <p align="center" >
 <samp>
-    Lil' portafolio I made to showcase some of my projects, it was made with <a href="https://vuejs.org/" target="_blank">React</a> and <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>
+     Portafolio I made to showcase some of my projects, it was made with <a href="https://vuejs.org/" target="_blank">React</a> and <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>
     </samp>
 </p>
 
