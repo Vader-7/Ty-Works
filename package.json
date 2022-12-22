@@ -24,6 +24,7 @@
     "@popperjs/core": "^2.11.6",
     "@react-spring/parallax": "^9.6.1",
     "@react-spring/web": "^9.6.0",
+    "antd": "^5.1.0",
     "babel": "^6.23.0",
     "babel-plugin-macros": "^3.1.0",
     "bootstrap": "^5.2.3",
