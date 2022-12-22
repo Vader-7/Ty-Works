@@ -19,7 +19,7 @@ npm run dev
 </samp>
 <p align="center" >
 <samp>
-     Or you can just go to: <a href="https://vader.works">vader.works</a>
+     Or you can just go to... <a href="https://vader.works">vader.works</a>
     </samp>
 </p>
 <h1 align="center">
