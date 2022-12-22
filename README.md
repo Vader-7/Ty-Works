@@ -17,6 +17,7 @@ npm install
 npm run dev
 ```
 </samp>
+<p align="center" >
 <samp>
      Or just go to: https://vader.works
     </samp>
