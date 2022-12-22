@@ -17,7 +17,10 @@ npm install
 npm run dev
 ```
 </samp>
-
+<samp>
+     Or just go to: https://vader.works
+    </samp>
+</p>
 <h1 align="center">
     <samp>Gallery</samp>
 </h1>
