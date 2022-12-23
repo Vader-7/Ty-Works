@@ -11,12 +11,16 @@ import {
   faLeaf,
   faQrcode,
   faPassport,
+  faDesktop,
+  faMobile
 } from '@fortawesome/free-solid-svg-icons';
 import img from '/images/Subtract.jpg';
 import leafLogo from '/images/LeaFeeling.jpg';
 import qr from '/images/frame.png';
 import GitHub from '/images/github.jpg';
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
+import Balancer from 'react-wrap-balancer'
+
 
 function App() {
   const parallax = useRef<IParallax>(null!);
@@ -45,10 +49,10 @@ function App() {
             <FontAwesomeIcon icon={faChevronCircleUp} />
           </a>
           <a className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => toggleTab(1)}>
-            <FontAwesomeIcon icon={faQrcode} />
+            <FontAwesomeIcon icon={faMobile} />
           </a>
           <a className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'} onClick={() => toggleTab(2)}>
-            <FontAwesomeIcon icon={faLeaf} />
+            <FontAwesomeIcon icon={faDesktop} />
           </a>
         </div>
         <ParallaxLayer offset={0} speed={100} factor={0} className="planet">
@@ -59,13 +63,17 @@ function App() {
         <ParallaxLayer offset={0} speed={3} factor={1} className="content;container" id="presentacion">
           <a href="https://github.com/Vader-7" onClick={() => parallax.current.update}>
             <h1 id="title">
+            <Balancer>
               <FontAwesomeIcon icon={faLaptopCode} /> Hello there
+              </Balancer>
             </h1>
           </a>
           <br />
           <p id="about">
+            <Balancer>
             My name is Tyler and I am a Full-Stack developer from Chile. I have a passion for creating intuitive and
             functional applications, and I am always looking for new opportunities to learn and grow.
+            </Balancer>
           </p>
           <FontAwesomeIcon onClick={() => parallax.current.scrollTo(1)} id="goingDown" icon={faChevronCircleDown} />
         </ParallaxLayer>
@@ -77,14 +85,18 @@ function App() {
                 <a href="https://github.com/Vader-7/RegistAPP" target="_blank">
                   {' '}
                   <h1 id="title">
+                  <Balancer>
                     <FontAwesomeIcon icon={faQrcode} /> RegistApp
+                  </Balancer>
                   </h1>
                 </a>
                 <p id="about">
+                <Balancer>
                   This app was designed to help universities efficiently track and monitor the attendance of their
                   students. It was developed using the Ionic framework, which is a powerful tool for creating
                   cross-platform mobile applications, and Angular. The app is also connected to the Firebase backend
                   service.
+                </Balancer>
                 </p>
               </ParallaxLayer>
               <ParallaxLayer className="logos" offset={1} speed={10} factor={1.2}>
@@ -105,14 +117,17 @@ function App() {
                 <a href="https://github.com/Vader-7/LeaFeeling" target="_blank">
                   {' '}
                   <h1 id="title">
+                  <Balancer>
                     <FontAwesomeIcon icon={faLeaf} /> LeaFeeling
+                  </Balancer>
                   </h1>
                 </a>
                 <p id="about">
+                <Balancer>
                   This page was built using Django, a powerful web framework written in Python, and connected to Oracle
-                  Cloud, a cloud computing platform for storing and managing data. <br /> <br /> All of the data
-                  displayed on the page is retrieved from Oracle Cloud database using Django's ORM (Object-Relational
+                  Cloud, a cloud computing platform for storing and managing data. All of the data displayed on the page is retrieved from Oracle Cloud database using Django's ORM (Object-Relational
                   Mapper).
+                </Balancer>
                 </p>
               </ParallaxLayer>
               <ParallaxLayer className="logos" offset={1} speed={10} factor={1.2}>
