@@ -99,33 +99,22 @@
   padding-top: 7%;
   z-index: 1;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1112px) {
   #footer1 {
-     left: 75%;
-  }
-  #footer {
-     left: 35%;
-  }
+    left: 75%;
+ }
+ #footer {
+    left: 35%;
+ }
   #about {
-     font-size: 19px !important;
+     font-size: 18px !important;
   }
   #title {
-     font-size: 25px !important;
+     font-size: 23px !important;
   }
-  .logos {
-     padding-top: 30% !important;
-  }
-}
-@media screen and (max-width: 1024px) {
   .logos {
      padding-top: 25% !important;
   }
-  #footer1 {
-    left: 60%;
- }
- #footer {
-    left: 40%;
- }
 }
 
 @media screen and (max-width: 370px) {
