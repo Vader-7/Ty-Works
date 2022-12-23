@@ -60,8 +60,8 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={3} factor={1} className="content;container" id="presentacion">
           <a href="https://github.com/Vader-7" onClick={() => parallax.current.update}>
-            <h1 id="title">
-              <FontAwesomeIcon icon={faLaptopCode} /> Hello there
+            <h1 id="titleM">
+               Hello There&nbsp;&nbsp;<FontAwesomeIcon id="titleIcon" icon={faLaptopCode} />
             </h1>
           </a>
           &nbsp;
@@ -118,8 +118,8 @@ function App() {
                 &nbsp;
                 <p id="about">
                 <Balancer>
-                  This page was built using Django, a powerful web framework written in Python, and connected to Oracle
-                  Cloud, a cloud computing platform for storing and managing data. All of the data displayed on the page is retrieved from Oracle Cloud database using Django's ORM (Object-Relational
+                  Page built using Django, a powerful web framework written in Python, and connected to Oracle
+                  Cloud, a cloud computing platform for storing and managing data.&nbsp;All of the data displayed on the page is retrieved from Oracle Cloud database using Django's ORM (Object-Relational
                   Mapper).
                 </Balancer>
                 </p>

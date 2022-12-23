@@ -18,7 +18,7 @@
   width: auto;
   height: 45px;
   transform: translate(-50%, -50%);
-  background-color: #002f58;
+  background-color: #149EDB;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +42,7 @@
 #footer .svg-inline--fa {
   padding-top: 15%;
   font-size: 19px;
-  color: #d6dbe3;
+  color: #E3E3F0;
 }
 #footer a {
   font-family: "Title" !important;
@@ -155,6 +155,17 @@ img {
   font-family: "Title" !important;
   font-size: 30px;
   color: #000c15;
+}
+#titleM{
+  font-family: "Title-1" !important;
+  font-size: 35px;
+  color: #000c15;
+  padding-top: 10%;
+}
+#titleIcon{
+  font-size: 27px;
+  color: #000c15;
+  padding-bottom: 1px;
 }
 #about {
   font-family: "Text" !important;
