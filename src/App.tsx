@@ -64,7 +64,7 @@ function App() {
            <a href="https://github.com/Vader-7" onClick={() => parallax.current.update}><h1 id="title"><FontAwesomeIcon icon={faLaptopCode}/> Hello there</h1></a>
           <br/>
           <p id="about">
-            My name is Tyler and I am a FullStack developer from Chile. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.
+            My name is Tyler and I am a Full-Stack developer from Chile. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.
           </p>
           <FontAwesomeIcon onClick={() => parallax.current.scrollTo(1)} id='goingDown' icon={faChevronCircleDown} />
       </ParallaxLayer>
