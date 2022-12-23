@@ -67,6 +67,7 @@
   text-align: center;
   flex-direction: column;
   padding: 0 10%;
+  animation: fadeIn 5s;
 }
 #fondo {
   background: #d5d9e0;
@@ -129,6 +130,7 @@
   padding-left: 3%;
   padding-top: 10px;
   z-index: 3;
+  animation: fadeIn 7s;
 }
 .planet .svg-inline--fa:hover {
   transform: translateY(30px);
