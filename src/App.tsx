@@ -61,7 +61,7 @@ function App() {
         <ParallaxLayer offset={0} speed={3} factor={1} className="content;container" id="presentacion">
           <a href="https://github.com/Vader-7" onClick={() => parallax.current.update}>
             <h1 id="titleM">
-               Hello There&nbsp;&nbsp;<FontAwesomeIcon id="titleIcon" icon={faLaptopCode} />
+               Hey there&nbsp;&nbsp;<FontAwesomeIcon id="titleIcon" icon={faLaptopCode} />
             </h1>
           </a>
           &nbsp;
