@@ -4,7 +4,7 @@
   left: 0;
   z-index: -1;
   width:100%;
-  height: 100vh;
+  height: 100%;
   --gradient-color-1: #c3e4ff; 
   --gradient-color-2: #6ec3f4; 
   --gradient-color-3: #eae2ff;  
@@ -73,7 +73,7 @@ Link{
   padding: 0 10%;
 }
 #fondo{
-  background:#c8c8c8;
+  background:#e0e0e0;
   z-index: -1;
   
 }
@@ -175,7 +175,7 @@ img{
   display: block;
 }
 .active-content #about {
-  animation: fadeIn 7s;
+  animation: fadeIn 5s;
 }
 @keyframes fadeIn {
   0% {
