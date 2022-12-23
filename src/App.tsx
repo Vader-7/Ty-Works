@@ -60,7 +60,7 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={3} factor={1} className="content;container" id="presentacion">
           <a href="https://github.com/Vader-7" onClick={() => parallax.current.update}>
-            <h1 id="title">
+            <h1 id="titleM">
                Hey there
             </h1>
           </a>
