@@ -116,13 +116,19 @@
      padding-top: 30% !important;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .logos {
-     padding-top: 20% !important;
+     padding-top: 25% !important;
   }
+  #footer1 {
+    left: 60%;
+ }
+ #footer {
+    left: 40%;
+ }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 370px) {
   #about {
      font-size: 17px !important;
   }
@@ -130,6 +136,9 @@
      width: 64px !important;
      height: 64px !important;
   }
+  .logos {
+    padding-top: 35% !important;
+ }
 }
 .logos {
   display: flex;
