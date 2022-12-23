@@ -87,7 +87,7 @@
   text-align: center;
   flex-direction: column;
   padding: 0 10%;
-  animation: fadeIn 3s;
+  animation: fadeIn 2s;
 }
 #fondo {
   background: #d5d9e0;
