@@ -68,7 +68,7 @@ function App() {
               </Balancer>
             </h1>
           </a>
-          <br />
+          &nbsp;
           <p id="about">
             <Balancer>
             My name is Tyler and I am a Full-Stack developer from Chile. I have a passion for creating intuitive and
