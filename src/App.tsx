@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="App">
       <Parallax ref={parallax} pages={2} style={{ top: '0', left: '0' }}>
-        <div id="footer" className="backdrop-blur-md backdrop-brightness-150 md:backdrop-filter-none">
+        <div id="footer">
           <a href="https://drive.google.com/uc?export=download&id=1b7iSUR29P5vxzoa7SUIPWFiiTgU7GXID">
             <FontAwesomeIcon icon={faPassport} />
           </a>
@@ -61,9 +61,7 @@ function App() {
         <ParallaxLayer offset={0} speed={3} factor={1} className="content;container" id="presentacion">
           <a href="https://github.com/Vader-7" onClick={() => parallax.current.update}>
             <h1 id="title">
-            <Balancer>
               <FontAwesomeIcon icon={faLaptopCode} /> Hello there
-              </Balancer>
             </h1>
           </a>
           &nbsp;
@@ -83,9 +81,7 @@ function App() {
                 <a href="https://github.com/Vader-7/RegistAPP" target="_blank">
                   {' '}
                   <h1 id="title">
-                  <Balancer>
                     <FontAwesomeIcon icon={faQrcode} /> RegistApp
-                  </Balancer>
                   </h1>
                 </a>
                 &nbsp;
@@ -116,9 +112,7 @@ function App() {
                 <a href="https://github.com/Vader-7/LeaFeeling" target="_blank">
                   {' '}
                   <h1 id="title">
-                  <Balancer>
                     <FontAwesomeIcon icon={faLeaf} /> LeaFeeling
-                  </Balancer>
                   </h1>
                 </a>
                 &nbsp;
