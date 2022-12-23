@@ -20,18 +20,19 @@ import qr from '/images/frame.png';
 import GitHub from '/images/github.jpg';
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Balancer from 'react-wrap-balancer'
-
+import i18next from 'i18next';
 
 function App() {
   const parallax = useRef<IParallax>(null!);
+
   const gradient = new Gradient();
   gradient.initGradient('#gradient-canvas');
 
   const [toggleState, setToggleState] = useState(1);
-
   const toggleTab = (index: SetStateAction<number>) => {
     setToggleState(index);
   };
+
   return (
     <div className="App">
       <Parallax ref={parallax} pages={2} style={{ top: '0', left: '0' }}>
