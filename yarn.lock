@@ -715,6 +715,26 @@
     "@react-spring/shared" "~9.6.1"
     "@react-spring/types" "~9.6.1"
 
+"@react-spring/konva@~9.6.1":
+  "integrity" "sha512-MevnU+tnG1LPsmMRpfJfevfLtI0ObIvrwYc+Xg+kmYJe00vwMRSdulQOztKANKalFXBewwk72XrQCeRLXFaUIg=="
+  "resolved" "https://registry.npmjs.org/@react-spring/konva/-/konva-9.6.1.tgz"
+  "version" "9.6.1"
+  dependencies:
+    "@react-spring/animated" "~9.6.1"
+    "@react-spring/core" "~9.6.1"
+    "@react-spring/shared" "~9.6.1"
+    "@react-spring/types" "~9.6.1"
+
+"@react-spring/native@~9.6.1":
+  "integrity" "sha512-ZIfSytxFGLw4gYOb8gsmwG0+JZYxuM/Y1XPCXCkhuoMn+RmOYrr0kQ4gLczbmf+TRxth7OT1c8vBYz0+SCGcIQ=="
+  "resolved" "https://registry.npmjs.org/@react-spring/native/-/native-9.6.1.tgz"
+  "version" "9.6.1"
+  dependencies:
+    "@react-spring/animated" "~9.6.1"
+    "@react-spring/core" "~9.6.1"
+    "@react-spring/shared" "~9.6.1"
+    "@react-spring/types" "~9.6.1"
+
 "@react-spring/parallax@^9.6.1":
   "integrity" "sha512-Q3zzLQbM5sVwjLzGpfR9/betn4Ir6czdOnqbj5gQeu1oCd6P4j4l4WF6xptexs4iwa+rQECpfbFsbtzxlrNyvQ=="
   "resolved" "https://registry.npmjs.org/@react-spring/parallax/-/parallax-9.6.1.tgz"
@@ -736,6 +756,16 @@
     "@react-spring/rafz" "~9.6.1"
     "@react-spring/types" "~9.6.1"
 
+"@react-spring/three@~9.6.1":
+  "integrity" "sha512-Tyw2YhZPKJAX3t2FcqvpLRb71CyTe1GvT3V+i+xJzfALgpk10uPGdGaQQ5Xrzmok1340DAeg2pR/MCfaW7b8AA=="
+  "resolved" "https://registry.npmjs.org/@react-spring/three/-/three-9.6.1.tgz"
+  "version" "9.6.1"
+  dependencies:
+    "@react-spring/animated" "~9.6.1"
+    "@react-spring/core" "~9.6.1"
+    "@react-spring/shared" "~9.6.1"
+    "@react-spring/types" "~9.6.1"
+
 "@react-spring/types@~9.6.1":
   "integrity" "sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q=="
   "resolved" "https://registry.npmjs.org/@react-spring/types/-/types-9.6.1.tgz"
@@ -744,6 +774,16 @@
 "@react-spring/web@^9.6.0", "@react-spring/web@~9.6.1":
   "integrity" "sha512-X2zR6q2Z+FjsWfGAmAXlQaoUHbPmfuCaXpuM6TcwXPpLE1ZD4A1eys/wpXboFQmDkjnrlTmKvpVna1MjWpZ5Hw=="
   "resolved" "https://registry.npmjs.org/@react-spring/web/-/web-9.6.1.tgz"
+  "version" "9.6.1"
+  dependencies:
+    "@react-spring/animated" "~9.6.1"
+    "@react-spring/core" "~9.6.1"
+    "@react-spring/shared" "~9.6.1"
+    "@react-spring/types" "~9.6.1"
+
+"@react-spring/zdog@~9.6.1":
+  "integrity" "sha512-0jSGm2OFW/+/+4dkRp46KzEkcLVfzV2k6DO1om0dLDtQ4q6FpX4dmDTlRc7Apzin6VtfQONMFIGITtbqoS28MQ=="
+  "resolved" "https://registry.npmjs.org/@react-spring/zdog/-/zdog-9.6.1.tgz"
   "version" "9.6.1"
   dependencies:
     "@react-spring/animated" "~9.6.1"
@@ -2446,6 +2486,18 @@
   dependencies:
     "lodash.throttle" "^4.1.1"
     "prop-types" "^15.7.2"
+
+"react-spring@^9.6.1":
+  "integrity" "sha512-BeP80R4SLb1bZHW/Q62nECoScHw/fH+jzGkD7dc892HNGa+lbGIJXURc6U7N8JfZ8peEO46nPxR57aUMuYzquQ=="
+  "resolved" "https://registry.npmjs.org/react-spring/-/react-spring-9.6.1.tgz"
+  "version" "9.6.1"
+  dependencies:
+    "@react-spring/core" "~9.6.1"
+    "@react-spring/konva" "~9.6.1"
+    "@react-spring/native" "~9.6.1"
+    "@react-spring/three" "~9.6.1"
+    "@react-spring/web" "~9.6.1"
+    "@react-spring/zdog" "~9.6.1"
 
 "react-swipeable-views-core@^0.14.0":
   "integrity" "sha512-0W/e9uPweNEOSPjmYtuKSC/SvKKg1sfo+WtPdnxeLF3t2L82h7jjszuOHz9C23fzkvLfdgkaOmcbAxE9w2GEjA=="

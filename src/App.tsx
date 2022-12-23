@@ -1,8 +1,6 @@
 import { useRef, useState } from 'react'
 import './App.css'
 import { Gradient } from './Gradient.js'
-import  planet  from '/images/icons8-globe.gif'
-import globe from '/images/vite.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faLinkedin,
           faGithub,
