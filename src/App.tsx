@@ -1,30 +1,27 @@
-import { SetStateAction, useRef, useState } from "react";
-import "./App.css";
-import { Gradient } from "./Gradient.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { SetStateAction, useRef, useState } from 'react';
+import './App.css';
+import { Gradient } from './Gradient.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import {
   faLaptopCode,
   faGlobe,
-  faChevronCircleRight,
   faChevronCircleUp,
   faChevronCircleDown,
-  faChevronCircleLeft,
   faLeaf,
   faQrcode,
   faPassport,
-} from "@fortawesome/free-solid-svg-icons";
-import img from "/images/Subtract.jpg";
-import leafLogo from "/images/LeaFeeling.jpg";
-import qr from "/images/frame.png";
-import GitHub from "/images/github.jpg";
-import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
-
+} from '@fortawesome/free-solid-svg-icons';
+import img from '/images/Subtract.jpg';
+import leafLogo from '/images/LeaFeeling.jpg';
+import qr from '/images/frame.png';
+import GitHub from '/images/github.jpg';
+import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 function App() {
   const parallax = useRef<IParallax>(null!);
   const gradient = new Gradient();
-  gradient.initGradient("#gradient-canvas");
+  gradient.initGradient('#gradient-canvas');
 
   const [toggleState, setToggleState] = useState(1);
 
@@ -33,10 +30,8 @@ function App() {
   };
   return (
     <div className="App">
-      <Parallax ref={parallax} pages={2} style={{ top: "0", left: "0" }}>
-        <div
-          id="footer"
-          className="backdrop-blur-md backdrop-brightness-150 md:backdrop-filter-none">
+      <Parallax ref={parallax} pages={2} style={{ top: '0', left: '0' }}>
+        <div id="footer" className="backdrop-blur-md backdrop-brightness-150 md:backdrop-filter-none">
           <a href="https://drive.google.com/uc?export=download&id=1b7iSUR29P5vxzoa7SUIPWFiiTgU7GXID">
             <FontAwesomeIcon icon={faPassport} />
           </a>
@@ -49,14 +44,10 @@ function App() {
           <a onClick={() => parallax.current.scrollTo(0)}>
             <FontAwesomeIcon icon={faChevronCircleUp} />
           </a>
-          <a
-            className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(1) }>
+          <a className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => toggleTab(1)}>
             <FontAwesomeIcon icon={faQrcode} />
           </a>
-          <a
-            className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(2)}>
+          <a className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'} onClick={() => toggleTab(2)}>
             <FontAwesomeIcon icon={faLeaf} />
           </a>
         </div>
@@ -65,62 +56,38 @@ function App() {
             <FontAwesomeIcon icon={faGlobe} /> Made by Tyler
           </a>
         </ParallaxLayer>
-        <ParallaxLayer
-          offset={0}
-          speed={3}
-          factor={1}
-          className="content;container"
-          id="presentacion">
-          <a
-            href="https://github.com/Vader-7"
-            onClick={() => parallax.current.update}>
+        <ParallaxLayer offset={0} speed={3} factor={1} className="content;container" id="presentacion">
+          <a href="https://github.com/Vader-7" onClick={() => parallax.current.update}>
             <h1 id="title">
               <FontAwesomeIcon icon={faLaptopCode} /> Hello there
             </h1>
           </a>
           <br />
           <p id="about">
-            My name is Tyler and I am a Full-Stack developer from Chile. I have
-            a passion for creating intuitive and functional applications, and I
-            am always looking for new opportunities to learn and grow.
+            My name is Tyler and I am a Full-Stack developer from Chile. I have a passion for creating intuitive and
+            functional applications, and I am always looking for new opportunities to learn and grow.
           </p>
-          <FontAwesomeIcon
-            onClick={() => parallax.current.scrollTo(1)}
-            id="goingDown"
-            icon={faChevronCircleDown}
-          />
+          <FontAwesomeIcon onClick={() => parallax.current.scrollTo(1)} id="goingDown" icon={faChevronCircleDown} />
         </ParallaxLayer>
         <ParallaxLayer id="fondo" offset={1} speed={0.5} factor={1} />
         <div className="content-tabs">
-          <div
-            className={
-              toggleState === 1 ? "content  active-content" : "content"
-            }>
+          <div className={toggleState === 1 ? 'content  active-content' : 'content'}>
             <>
-              <ParallaxLayer
-                className="proyecto"
-                offset={1}
-                speed={-30}
-                factor={1}>
+              <ParallaxLayer className="proyecto" offset={1} speed={-30} factor={1}>
                 <a href="https://github.com/Vader-7/RegistAPP" target="_blank">
-                  {" "}
+                  {' '}
                   <h1 id="title">
                     <FontAwesomeIcon icon={faQrcode} /> RegistApp
                   </h1>
                 </a>
                 <p id="about">
-                  This app was designed to help universities efficiently track
-                  and monitor the attendance of their students. It was developed
-                  using the Ionic framework, which is a powerful tool for
-                  creating cross-platform mobile applications, and Angular. The
-                  app is also connected to the Firebase backend service.
+                  This app was designed to help universities efficiently track and monitor the attendance of their
+                  students. It was developed using the Ionic framework, which is a powerful tool for creating
+                  cross-platform mobile applications, and Angular. The app is also connected to the Firebase backend
+                  service.
                 </p>
               </ParallaxLayer>
-              <ParallaxLayer
-                className="logos"
-                offset={1}
-                speed={10}
-                factor={1.2}>
+              <ParallaxLayer className="logos" offset={1} speed={10} factor={1.2}>
                 <div className="right-div">
                   <a href="https://github.com/Vader-7/RegistAPP">
                     <img src={img} alt="" />
@@ -132,36 +99,23 @@ function App() {
               </ParallaxLayer>
             </>
           </div>
-          <div
-            className={
-              toggleState === 2 ? "content  active-content" : "content"
-            }>
+          <div className={toggleState === 2 ? 'content  active-content' : 'content'}>
             <>
-              <ParallaxLayer
-                className="proyecto"
-                offset={1}
-                speed={-30}
-                factor={1}>
+              <ParallaxLayer className="proyecto" offset={1} speed={-30} factor={1}>
                 <a href="https://github.com/Vader-7/LeaFeeling" target="_blank">
-                  {" "}
+                  {' '}
                   <h1 id="title">
                     <FontAwesomeIcon icon={faLeaf} /> LeaFeeling
                   </h1>
                 </a>
                 <p id="about">
-                  This page was built using Django, a powerful web framework
-                  written in Python, and connected to Oracle Cloud, a cloud
-                  computing platform for storing and managing data. <br />{" "}
-                  <br /> All of the data displayed on the page is retrieved from
-                  Oracle Cloud database using Django's ORM (Object-Relational
+                  This page was built using Django, a powerful web framework written in Python, and connected to Oracle
+                  Cloud, a cloud computing platform for storing and managing data. <br /> <br /> All of the data
+                  displayed on the page is retrieved from Oracle Cloud database using Django's ORM (Object-Relational
                   Mapper).
                 </p>
               </ParallaxLayer>
-              <ParallaxLayer
-                className="logos"
-                offset={1}
-                speed={10}
-                factor={1.2}>
+              <ParallaxLayer className="logos" offset={1} speed={10} factor={1.2}>
                 <div className="right-div">
                   <a href="https://github.com/Vader-7/LeaFeeling">
                     <img src={leafLogo} alt="" />
