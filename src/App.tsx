@@ -17,7 +17,6 @@ import qr from '/images/frame.png';
 import GitHub from '/images/github.jpg';
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Balancer from 'react-wrap-balancer';
-import i18next from 'i18next';
 
 function App() {
    const parallax = useRef<IParallax>(null!);
