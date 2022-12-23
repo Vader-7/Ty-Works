@@ -94,9 +94,15 @@
   padding-top: 7%;
   z-index: 1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .proyecto {
     padding-bottom: 60% !important;
+  }
+  #footer1{
+    left: 75%;
+  }
+  #footer{
+    left: 35%;
   }
   #about {
     font-size: 19px !important;
