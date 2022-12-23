@@ -90,6 +90,7 @@ function App() {
                   </Balancer>
                   </h1>
                 </a>
+                &nbsp;
                 <p id="about">
                 <Balancer>
                   This app was designed to help universities efficiently track and monitor the attendance of their
@@ -122,6 +123,7 @@ function App() {
                   </Balancer>
                   </h1>
                 </a>
+                &nbsp;
                 <p id="about">
                 <Balancer>
                   This page was built using Django, a powerful web framework written in Python, and connected to Oracle
