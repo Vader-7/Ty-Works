@@ -46,13 +46,15 @@ function App() {
           <a onClick={() => parallax.current.scrollTo(0)}>
             <FontAwesomeIcon icon={faChevronCircleUp} />
           </a>
-          <a className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => toggleTab(1)}>
-            <FontAwesomeIcon icon={faMobile} />
-          </a>
-          <a className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'} onClick={() => toggleTab(2)}>
-            <FontAwesomeIcon icon={faDesktop} />
-          </a>
-        </div>
+          </div>
+          <div id='footer1'>
+            <a className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => toggleTab(1)}>
+              <FontAwesomeIcon icon={faMobile} />
+            </a>
+            <a className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'} onClick={() => toggleTab(2)}>
+              <FontAwesomeIcon icon={faDesktop} />
+            </a>
+          </div>
         <ParallaxLayer offset={0} speed={100} factor={0} className="planet">
           <a href="https://github.com/Vader-7/Ty-Works">
             <FontAwesomeIcon icon={faGlobe} /> Made by Tyler
@@ -81,7 +83,7 @@ function App() {
                 <a href="https://github.com/Vader-7/RegistAPP" target="_blank">
                   {' '}
                   <h1 id="title">
-                    <FontAwesomeIcon icon={faQrcode} /> RegistApp
+                    RegistApp
                   </h1>
                 </a>
                 &nbsp;
@@ -112,7 +114,7 @@ function App() {
                 <a href="https://github.com/Vader-7/LeaFeeling" target="_blank">
                   {' '}
                   <h1 id="title">
-                    <FontAwesomeIcon icon={faLeaf} /> LeaFeeling
+                    LeaFeeling
                   </h1>
                 </a>
                 &nbsp;
