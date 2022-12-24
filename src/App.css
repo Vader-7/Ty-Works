@@ -99,7 +99,8 @@
   padding-top: 7%;
   z-index: 1;
 }
-@media screen and (min-width: 1024px) {
+
+@media screen and (min-width: 1920px){
   #footer {
      left: 45%;
   }
@@ -117,13 +118,14 @@
      font-size: 50px !important;
   }
   .logos {
-     padding-top: 20% !important;
+     padding-top: 15% !important;
   }
   .logos img {
      width: 300px !important;
      height: 300px !important;
   }
 }
+
 @media screen and (min-width: 2560px) {
   #footer {
      left: 47%;
@@ -178,10 +180,10 @@
 
 @media screen and (max-width: 1112px) {
   #footer1 {
-     left: 57%;
+     left: 70%;
   }
   #footer {
-     left: 43%;
+     left: 35%;
   }
   #about {
      font-size: 18px !important;
