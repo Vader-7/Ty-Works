@@ -72,7 +72,7 @@ function App() {
                &nbsp;
                <p id="about">
                   <Balancer>
-                     I'm Tyler and I am a Full-Stack developer from Chile. I have a passion for creating intuitive and
+                     I'm Tyler and I am a Full-stack developer from Chile. I have a passion for creating intuitive and
                      functional applications, and I am always looking for new opportunities to learn and grow.
                   </Balancer>
                </p>

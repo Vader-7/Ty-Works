@@ -87,7 +87,7 @@
   text-align: center;
   flex-direction: column;
   padding: 0 10%;
-  animation: fadeIn 2s;
+  animation: fadeInM 2s;
 }
 #fondo {
   background: #d5d9e0;
@@ -96,11 +96,11 @@
 .proyecto {
   align-items: center;
   padding: 0 10%;
-  padding-top: 5%;
+  padding-top: 6%;
   z-index: 1;
 }
 
-@media screen and (min-width: 1920px) and (max-width: 2560px) {
+@media screen and (min-width: 1910px) and (max-width: 2560px) {
   #footer {
      left: 45%;
   }
@@ -202,13 +202,14 @@
   padding-top: 15%;
   padding-bottom: 15%;
   z-index: 1;
-  animation: fadeIn 3s;
 }
 .left-div {
   padding-left: 10%;
+  animation: fadeIn 3s;
 }
 .right-div {
   padding-right: 10%;
+  animation: fadeIn 3s;
 }
 .planet {
   font-size: 12px;
@@ -221,7 +222,7 @@
   padding-left: 3%;
   padding-top: 10px;
   z-index: 3;
-  animation: fadeIn 3s;
+  animation: fadeInM 3s;
 }
 .planet .svg-inline--fa:hover {
   transform: translateY(30px);
@@ -232,7 +233,7 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 30px;
-  box-shadow: 0 0 10px rgba(108, 107, 107, 0.5);
+  box-shadow: none;
   max-width: 50%;
   height: auto;
   border-color: white;
@@ -270,14 +271,21 @@ img {
 .active-content {
   display: block;
 }
-.active-content #about {
+.active-content #about, .active-content #title{
   animation: fadeIn 3s;
 }
 @keyframes fadeIn {
   0% {
-     opacity: 0;
+    mask: linear-gradient(90deg, #000 25%, #000000e6 50%, #00000000) 150% 0 / 400% no-repeat;
+    opacity: .2;
   }
   100% {
-     opacity: 1;
+    mask: linear-gradient(90deg, #000 25%, #000000e6 50%, #00000000) 0 / 400% no-repeat;
+    opacity: 1;
   }
+}
+@keyframes fadeInM {
+    0% { opacity: 0; filter: brightness(1) blur(20px) }
+    10% { opacity: 1; filter: brightness(2) blur(10px) }
+    100% { opacity: 1; filter: brightness(1) blur(0) }
 }
