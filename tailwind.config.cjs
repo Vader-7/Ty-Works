@@ -19,14 +19,12 @@ module.exports = {
       8: "2rem",},
     container: {
       center: true,
-      // add horizontal padding to the container
       padding: {
         DEFAULT: "1rem",
         sm: "2rem",
         lg: "4rem",
         xl: "5rem",
       },
-      // set the width of the container
       width : {
         sm: "80%",
         md: "80%",
@@ -45,8 +43,6 @@ module.exports = {
         lg: "80%",
         xl: "80%",
       },
-      // dont let the container touch the edges of the screen
-
     },
   plugins: [],
   }

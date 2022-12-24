@@ -82,7 +82,6 @@ function App() {
                            {' '}
                            <h1 id="title">RegistApp</h1>
                         </a>
-                        &nbsp;
                         <p id="about">
                            <Balancer>
                               This app was designed to help universities efficiently track and monitor the attendance of
@@ -111,7 +110,6 @@ function App() {
                            {' '}
                            <h1 id="title">LeaFeeling</h1>
                         </a>
-                        &nbsp;
                         <p id="about">
                            <Balancer>
                               Page built using Django, a powerful web framework written in Python, and connected to

@@ -63,7 +63,7 @@
 }
 #footer a,
 #footer1 a {
-  font-family: 'Title' !important;
+  font-family: "Title" !important;
   margin: 0 10px;
   color: #000000;
   text-decoration: none;
@@ -96,7 +96,7 @@
 .proyecto {
   align-items: center;
   padding: 0 10%;
-  padding-top: 7%;
+  padding-top: 10%;
   z-index: 1;
 }
 
@@ -107,7 +107,8 @@
   #footer1 {
      left: 55%;
   }
-  #footer .svg-inline--fa, #footer1 .svg-inline--fa {
+  #footer .svg-inline--fa,
+  #footer1 .svg-inline--fa {
      font-size: 25px;
   }
   .planet a {
@@ -136,9 +137,10 @@
   #footer1 {
      left: 53%;
   }
-  #footer .svg-inline--fa, #footer1 .svg-inline--fa {
-    font-size: 30px;
- }
+  #footer .svg-inline--fa,
+  #footer1 .svg-inline--fa {
+     font-size: 30px;
+  }
   .planet a {
      font-size: 40px;
   }
@@ -158,9 +160,9 @@
   }
 }
 
-@media screen and (max-width: 1112px) {
+@media screen and (max-width: 1024px) {
   #footer1 {
-     left: 70%;
+     left: 75%;
   }
   #footer {
      left: 35%;
@@ -169,7 +171,7 @@
      font-size: 18px !important;
   }
   #title {
-     font-size: 23px !important;
+     font-size: 30px !important;
   }
   .logos {
      padding-top: 22% !important;
@@ -206,7 +208,7 @@
 }
 .planet {
   font-size: 12px;
-  font-family: 'Text-1';
+  font-family: "Text-1";
   border: none;
   box-shadow: none;
   color: #000c15;
@@ -237,12 +239,12 @@ img {
   transition: all 0.3s ease-in-out;
 }
 #title {
-  font-family: 'Title' !important;
+  font-family: "Title" !important;
   font-size: 30px;
   color: #000c15;
 }
 #titleM {
-  font-family: 'Title-1' !important;
+  font-family: "Title-1" !important;
   font-size: 35px;
   color: #000c15;
   padding-top: 10%;
@@ -253,7 +255,7 @@ img {
   padding-bottom: 1px;
 }
 #about {
-  font-family: 'Text' !important;
+  font-family: "Text" !important;
   font-weight: 600;
   font-size: 20px;
   color: #000c15;
