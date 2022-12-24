@@ -33,7 +33,7 @@
   width: auto;
   height: 45px;
   transform: translate(-50%, -50%);
-  background-color: #0096d8;
+  background-color: #008bc7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,101 +99,6 @@
   padding-top: 6%;
   z-index: 1;
 }
-
-@media screen and (min-width: 1910px) and (max-width: 2560px) {
-  #footer {
-     left: 45%;
-  }
-  #footer1 {
-     left: 55%;
-  }
-  #footer .svg-inline--fa,
-  #footer1 .svg-inline--fa {
-     font-size: 25px;
-  }
-  .planet a {
-     font-size: 25px;
-  }
-  #about {
-     font-size: 35px !important;
-  }
-  #title,
-  #titleM {
-     font-size: 55px !important;
-  }
-  .logos {
-     padding-top: 15% !important;
-  }
-  .logos img {
-     width: 300px !important;
-     height: 300px !important;
-  }
-}
-
-@media screen and (min-width: 2560px) {
-  #footer {
-     left: 47%;
-  }
-  #footer1 {
-     left: 53%;
-  }
-  #footer .svg-inline--fa,
-  #footer1 .svg-inline--fa {
-     font-size: 30px;
-  }
-  .planet a {
-     font-size: 40px;
-  }
-  #about {
-     font-size: 45px !important;
-  }
-  #title,
-  #titleM {
-     font-size: 70px !important;
-  }
-  .logos {
-     padding-top: 20% !important;
-  }
-  .logos img {
-     width: 500px !important;
-     height: 500px !important;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #footer1 {
-     left: 73%;
-  }
-  #footer {
-     left: 37%;
-  }
-  #about {
-     font-size: 19px !important;
-  }
-  #title {
-     font-size: 32px !important;
-  }
-  .logos {
-     padding-top: 22% !important;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  #about {
-     font-size: 17px !important;
-  }
-  #footer .svg-inline--fa,
-  #footer1 .svg-inline--fa {
-     font-size: 17px;
-  }
-  .logos img {
-     width: 64px !important;
-     height: 64px !important;
-  }
-  .logos {
-     padding-top: 37% !important;
-  }
-}
 .logos {
   display: flex;
   align-items: center;
@@ -205,11 +110,11 @@
 }
 .left-div {
   padding-left: 10%;
-  animation: fadeIn 3s;
+  animation: fadeIn 2s;
 }
 .right-div {
   padding-right: 10%;
-  animation: fadeIn 3s;
+  animation: fadeIn 1s;
 }
 .planet {
   font-size: 12px;
@@ -222,7 +127,7 @@
   padding-left: 3%;
   padding-top: 10px;
   z-index: 3;
-  animation: fadeInM 3s;
+  animation: fadeInM 1s;
 }
 .planet .svg-inline--fa:hover {
   transform: translateY(30px);
@@ -272,7 +177,7 @@ img {
   display: block;
 }
 .active-content #about, .active-content #title{
-  animation: fadeIn 3s;
+  animation: fadeIn 1s;
 }
 @keyframes fadeIn {
   0% {
@@ -288,4 +193,8 @@ img {
     0% { opacity: 0; filter: brightness(1) blur(20px) }
     10% { opacity: 1; filter: brightness(2) blur(10px) }
     100% { opacity: 1; filter: brightness(1) blur(0) }
+}
+@keyframes fadeInP {
+  0% { opacity: 0; clip-path: inset(5%); transform: scale(111.11%) }
+  100% { opacity: 1; clip-path: inset(0); transform: scale(1) }
 }

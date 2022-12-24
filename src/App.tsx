@@ -1,5 +1,6 @@
 import { SetStateAction, useRef, useState, useEffect, useMemo, memo } from 'react';
 import './App.css';
+import './App.responsive.css';
 import { Gradient } from './Gradient.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
