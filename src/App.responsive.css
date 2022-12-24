@@ -1,116 +1,116 @@
 @media screen and (min-width: 1910px) and (max-width: 2560px) {
     #footer {
-       left: 45%;
+      left: 45%;
     }
     #footer1 {
-       left: 55%;
+      left: 55%;
     }
     #footer .svg-inline--fa,
     #footer1 .svg-inline--fa {
-       font-size: 25px;
+      font-size: 25px;
     }
     .planet a {
-       font-size: 25px;
+      font-size: 25px;
     }
     #about {
-       font-size: 35px !important;
+      font-size: 35px !important;
     }
     #title,
     #titleM {
-       font-size: 55px !important;
+      font-size: 55px !important;
     }
     .logos {
-       padding-top: 15% !important;
+      padding-top: 15% !important;
     }
     .logos img {
-       width: 300px !important;
-       height: 300px !important;
+      width: 300px !important;
+      height: 300px !important;
     }
- }
- 
- @media screen and (min-width: 2560px) {
+  }
+  
+  @media screen and (min-width: 2560px) {
     #footer {
-       left: 47%;
+      left: 47%;
     }
     #footer1 {
-       left: 53%;
+      left: 53%;
     }
     #footer .svg-inline--fa,
     #footer1 .svg-inline--fa {
-       font-size: 30px;
+      font-size: 30px;
     }
     .planet a {
-       font-size: 40px;
+      font-size: 40px;
     }
     #about {
-       font-size: 45px !important;
+      font-size: 45px !important;
     }
     #title,
     #titleM {
-       font-size: 70px !important;
+      font-size: 70px !important;
     }
     .logos {
-       padding-top: 20% !important;
+      padding-top: 20% !important;
     }
     .logos img {
-       width: 500px !important;
-       height: 500px !important;
+      width: 500px !important;
+      height: 500px !important;
     }
- }
- 
- @media screen and (max-width: 1024px) {
+  }
+  
+  @media screen and (max-width: 1024px) {
     #footer1 {
-       left: 73%;
+      left: 73%;
     }
     #footer {
-       left: 37%;
+      left: 37%;
     }
     #about {
-       font-size: 19px !important;
+      font-size: 19px !important;
     }
     #title {
-       font-size: 32px !important;
+      font-size: 32px !important;
     }
     .logos {
-       padding-top: 22% !important;
+      padding-top: 22% !important;
     }
- }
- @media screen and (orientation: landscape) and (max-width: 1024px) {
+  }
+  @media screen and (orientation: landscape) and (max-width: 1024px) {
     #footer1 {
-       left: 63%;
+      left: 63%;
     }
     #footer {
-       left: 40%;
+      left: 40%;
     }
     #about {
-       font-size: 15px !important;
+      font-size: 15px !important;
     }
     #title {
-       font-size: 20px !important;
+      font-size: 20px !important;
     }
     .logos {
-       padding-top: 22% !important;
+      padding-top: 22% !important;
     }
     .logos img {
-       width: 60px !important;
-       height: 60px !important;
+      width: 60px !important;
+      height: 60px !important;
     }
- }
- 
- @media screen and (max-width: 370px) {
+  }
+  
+  @media screen and (max-width: 370px) {
     #about {
-       font-size: 17px !important;
+      font-size: 17px !important;
     }
     #footer .svg-inline--fa,
     #footer1 .svg-inline--fa {
-       font-size: 17px;
+      font-size: 17px;
     }
     .logos img {
-       width: 64px !important;
-       height: 64px !important;
+      width: 64px !important;
+      height: 64px !important;
     }
     .logos {
-       padding-top: 37% !important;
+      padding-top: 37% !important;
     }
- }
- 
+  }
+  
