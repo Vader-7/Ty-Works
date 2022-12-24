@@ -100,7 +100,7 @@
   z-index: 1;
 }
 
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
   #footer {
      left: 45%;
   }
@@ -127,32 +127,6 @@
 }
 
 @media screen and (min-width: 2560px) {
-  #footer {
-     left: 47%;
-  }
-  #footer1 {
-     left: 53%;
-  }
-  .planet a {
-     font-size: 30px;
-  }
-  #about {
-     font-size: 50px !important;
-  }
-  #title,
-  #titleM {
-     font-size: 70px !important;
-  }
-  .logos {
-     padding-top: 20% !important;
-  }
-  .logos img {
-     width: 500px !important;
-     height: 500px !important;
-  }
-}
-
-@media screen and (min-width: 3840px) {
   #footer {
      left: 47%;
   }
