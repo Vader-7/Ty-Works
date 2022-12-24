@@ -35,7 +35,7 @@ npm run dev
 <p align="center">
  <samp>
 
-[MIT License](LICENSE)
+[GNU GPLv3](LICENSE)
 </samp>
 </p>
 
