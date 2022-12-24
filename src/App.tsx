@@ -1,4 +1,4 @@
-import { SetStateAction, useRef, useState } from 'react';
+import { SetStateAction, useRef, useState, useEffect, useMemo, memo } from 'react';
 import './App.css';
 import { Gradient } from './Gradient.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,12 +20,21 @@ import Balancer from 'react-wrap-balancer';
 
 function App() {
    const parallax = useRef<IParallax>(null!);
-   const gradient = new Gradient();
-   gradient.initGradient('#gradient-canvas');
    const [toggleState, setToggleState] = useState(1);
    const toggleTab = (index: SetStateAction<number>) => {
       setToggleState(index);
    };
+   const gradientColors = {
+      color1: '--gradient-color-1: #c3e4ff',
+      color2: '--gradient-color-2: #6ec3f4',
+      color3: '--gradient-color-3: #e6e3ef',
+      color4: '--gradient-color-4: #0096d7',
+   };
+   const gradient = useMemo(() => new Gradient(), []);
+   useEffect(() => {
+      gradient.initGradient('#gradient-canvas');
+   }, [gradientColors.color1, gradientColors.color2, gradientColors.color3, gradientColors.color4]);
+
    return (
       <div className="App">
          <Parallax ref={parallax} pages={2} style={{ top: '0', left: '0' }}>
@@ -138,4 +147,4 @@ function App() {
       </div>
    );
 }
-export default App;
+export default memo(App);

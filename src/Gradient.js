@@ -504,6 +504,8 @@ function normalizeColor(hexCode) {
         }).filter(Boolean).map(normalizeColor)
     }
   }
+
+Gradient.initGradient = undefined;
   
   
   
