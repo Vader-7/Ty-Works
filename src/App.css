@@ -107,15 +107,18 @@
   #footer1 {
      left: 55%;
   }
+  #footer .svg-inline--fa, #footer1 .svg-inline--fa {
+     font-size: 25px;
+  }
   .planet a {
-     font-size: 20px;
+     font-size: 25px;
   }
   #about {
-     font-size: 30px !important;
+     font-size: 35px !important;
   }
   #title,
   #titleM {
-     font-size: 50px !important;
+     font-size: 55px !important;
   }
   .logos {
      padding-top: 15% !important;
@@ -133,22 +136,25 @@
   #footer1 {
      left: 53%;
   }
+  #footer .svg-inline--fa, #footer1 .svg-inline--fa {
+    font-size: 30px;
+ }
   .planet a {
-     font-size: 50px;
+     font-size: 40px;
   }
   #about {
-     font-size: 70px !important;
+     font-size: 45px !important;
   }
   #title,
   #titleM {
-     font-size: 90px !important;
+     font-size: 70px !important;
   }
   .logos {
      padding-top: 20% !important;
   }
   .logos img {
-     width: 600px !important;
-     height: 600px !important;
+     width: 500px !important;
+     height: 500px !important;
   }
 }
 
