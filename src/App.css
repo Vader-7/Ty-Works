@@ -176,10 +176,10 @@
 
 @media screen and (max-width: 1112px) {
   #footer1 {
-    left: 75%;
+    left: 57%;
  }
  #footer {
-    left: 35%;
+    left: 43%;
  }
   #about {
      font-size: 18px !important;
@@ -188,7 +188,7 @@
      font-size: 23px !important;
   }
   .logos {
-     padding-top: 25% !important;
+     padding-top: 22% !important;
   }
 }
 
