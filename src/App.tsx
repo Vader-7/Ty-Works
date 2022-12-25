@@ -1,4 +1,5 @@
-import { SetStateAction, useRef, useState, useEffect, useMemo, memo } from 'react';
+import { memo } from 'react';
+import { SetStateAction, useRef, useReducer, useEffect, useMemo } from 'react';
 import './App.css';
 import './App.responsive.css';
 import { Gradient } from './Gradient.js';
@@ -21,20 +22,15 @@ import Balancer from 'react-wrap-balancer';
 
 function App() {
    const parallax = useRef<IParallax>(null!);
-   const [toggleState, setToggleState] = useState(1);
-   const toggleTab = (index: SetStateAction<number>) => {
-      setToggleState(index);
+   const [toggleState, setToggleState] = useReducer((state: number, newState: number) => newState, 2);
+   const gradientColors = ['#c3e4ff', '#6ec3f4', '#e6e3ef', '#0096d7'];
+   const gradientOptions = {
+      colors: gradientColors,
    };
-   const gradientColors = {
-      color1: '--gradient-color-1: #c3e4ff',
-      color2: '--gradient-color-2: #6ec3f4',
-      color3: '--gradient-color-3: #e6e3ef',
-      color4: '--gradient-color-4: #0096d7',
-   };
-   const gradient = useMemo(() => new Gradient(), []);
+   const gradient = useMemo(() => new Gradient(gradientOptions), [gradientOptions]);
    useEffect(() => {
       gradient.initGradient('#gradient-canvas');
-   }, [gradientColors.color1, gradientColors.color2, gradientColors.color3, gradientColors.color4]);
+   }, [gradient]);
 
    return (
       <div className="App">
@@ -54,10 +50,11 @@ function App() {
                </a>
             </div>
             <div id="footer1">
-               <a className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => toggleTab(1)}>
+               <a className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => setToggleState(1)}>
                   <FontAwesomeIcon icon={faMobile} />
                </a>
-               <a className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'} onClick={() => toggleTab(2)}>
+
+               <a className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'} onClick={() => setToggleState(2)}>
                   <FontAwesomeIcon icon={faDesktop} />
                </a>
             </div>
@@ -66,7 +63,7 @@ function App() {
                   <FontAwesomeIcon icon={faLaptopCode} /> Made by Tyler
                </a>
             </ParallaxLayer>
-            <ParallaxLayer offset={0} speed={3} factor={1} className="content;container" id="presentacion">
+            <ParallaxLayer offset={0} speed={3} factor={1} className="content container" id="presentacion">
                <a href="https://github.com/Vader-7" onClick={() => parallax.current.update}>
                   <h1 id="titleM">Hey there</h1>
                </a>

@@ -281,6 +281,9 @@ function normalizeColor(hexCode) {
   
   //Gradient object
   class Gradient {
+    destroy() {
+       throw new Error('Method not implemented.');
+    }
     initGradient(arg0) {
       throw new Error('Method not implemented.');
     }
@@ -318,7 +321,8 @@ function normalizeColor(hexCode) {
           this.el = document.querySelector(selector);
           this.connect();
           return this;
-        })
+        });
+       this.destroyGradient = undefined;
     }
     async connect() {
         this.shaderFiles = {
