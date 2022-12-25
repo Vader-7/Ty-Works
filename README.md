@@ -26,7 +26,7 @@ npm run dev
     <samp>Gallery</samp>
 </h1>
 
-![PortafolioIMG](https://user-images.githubusercontent.com/66812754/209462962-12bb1aa5-49c4-4ee6-a793-8ba7a2201c0f.png)
+![Portafolio](https://user-images.githubusercontent.com/66812754/209484725-de5bf85c-5573-4f80-87ba-ceece818f80f.png)
 
 <h1 align="start">
     <samp>License</samp>
