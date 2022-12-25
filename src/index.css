@@ -31,3 +31,8 @@
   src: local('Title-1'), url(./assets/fonts/PPNeueMontreal-Bold.otf) format('opentype');  
   font-display: swap;
 }
+@font-face {
+  font-family: 'Fuji';
+  src: local('Fuji'), url(./assets/fonts/PPFuji-Light.otf) format('opentype');
+  font-display: swap;
+}
