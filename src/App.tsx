@@ -94,7 +94,6 @@ const App = memo(() => {
                      <ParallaxLayer className="proyecto" offset={1} speed={-30} factor={1}>
                         <div className='texto-presentacion'>
                         <a href="https://github.com/Vader-7/RegistAPP" target="_blank">
-                           {' '}
                            <h1 id="title">RegistApp</h1>
                         </a>
                         <p id="about">
@@ -106,7 +105,7 @@ const App = memo(() => {
                            </Balancer>
                         </p>
                         </div>
-                        <a href="">
+                        <a href="https://github.com/Vader-7/RegistAPP" target="_blank">
                            <img src={regis} alt="" style={{width: 1000}}/>
                         </a>
                      </ParallaxLayer>
@@ -115,7 +114,9 @@ const App = memo(() => {
                <div className={toggleState === 2 ? 'content  active-content' : 'content'}>
                   <>
                      <ParallaxLayer className="proyecto" offset={1} speed={-30} factor={1}>
-                        <h1 id='title'>Page under construction, please be patient with the developer.</h1>
+                        <br />
+                        <br />
+                        <h3 id='about'>Page under construction, please be patient with Tyler (me).</h3>
                      </ParallaxLayer>
                   </>
                </div>
