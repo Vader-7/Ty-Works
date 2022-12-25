@@ -16,6 +16,7 @@ import {
 import img from '/images/aour4-24nd0.avif';
 import leafLogo from '/images/au8c4-cwndv.avif';
 import qr from '/images/frame.png';
+import regis from '/images/RegistApp.png';
 import GitHub from '/images/a7snf-2vi9j.avif';
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Balancer from 'react-wrap-balancer';
@@ -91,6 +92,7 @@ const App = memo(() => {
                <div className={toggleState === 1 ? 'content  active-content' : 'content'}>
                   <>
                      <ParallaxLayer className="proyecto" offset={1} speed={-30} factor={1}>
+                        <div className='texto-presentacion'>
                         <a href="https://github.com/Vader-7/RegistAPP" target="_blank">
                            {' '}
                            <h1 id="title">RegistApp</h1>
@@ -103,46 +105,17 @@ const App = memo(() => {
                               Firebase backend service.
                            </Balancer>
                         </p>
-                     </ParallaxLayer>
-                     <ParallaxLayer className="logos" offset={1} speed={10} factor={1.2}>
-                        <div className="right-div">
-                           <a href="https://github.com/Vader-7/RegistAPP">
-                              <img className="w-24 md:w-32 lg:w-48" src={img} alt="" />
-                           </a>
                         </div>
-                        <div className="left-div">
-                           <img className="w-24 md:w-32 lg:w-48" src={qr} alt="" />
-                        </div>
+                        <a href="">
+                           <img src={regis} alt="" style={{width: 1000}}/>
+                        </a>
                      </ParallaxLayer>
                   </>
                </div>
                <div className={toggleState === 2 ? 'content  active-content' : 'content'}>
                   <>
                      <ParallaxLayer className="proyecto" offset={1} speed={-30} factor={1}>
-                        <a href="https://github.com/Vader-7/LeaFeeling" target="_blank">
-                           {' '}
-                           <h1 id="title">LeaFeeling</h1>
-                        </a>
-                        <p id="about">
-                           <Balancer>
-                              Page built using Django, a powerful web framework written in Python, and connected to
-                              Oracle Cloud, a cloud computing platform for storing and managing data.&nbsp;All of the
-                              data displayed on the page is retrieved from Oracle Cloud database using Django's ORM
-                              (Object-Relational Mapper).
-                           </Balancer>
-                        </p>
-                     </ParallaxLayer>
-                     <ParallaxLayer className="logos" offset={1} speed={10} factor={1.2}>
-                        <div className="right-div">
-                           <a href="https://github.com/Vader-7/LeaFeeling">
-                              <img className="w-24 md:w-32 lg:w-48" src={leafLogo} alt="" />
-                           </a>
-                        </div>
-                        <div className="left-div">
-                           <a href="https://github.com/Vader-7/LeaFeeling">
-                              <img className="w-24 md:w-32 lg:w-48" src={GitHub} alt="" />
-                           </a>
-                        </div>
+                        <h1 id='title'>Page under construction, please be patient with the developer.</h1>
                      </ParallaxLayer>
                   </>
                </div>
