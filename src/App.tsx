@@ -48,12 +48,11 @@ function App() {
                <a onClick={() => parallax.current.scrollTo(0)}>
                   <FontAwesomeIcon icon={faChevronCircleUp} />
                </a>
-            </div>
-            <div id="footer1">
+               
+               <div id="white-space-in-footer"/>
                <a className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => setToggleState(1)}>
                   <FontAwesomeIcon icon={faMobile} />
                </a>
-
                <a className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'} onClick={() => setToggleState(2)}>
                   <FontAwesomeIcon icon={faDesktop} />
                </a>

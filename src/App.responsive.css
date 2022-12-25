@@ -1,12 +1,5 @@
 @media screen and (min-width: 1910px) and (max-width: 2560px) {
-    #footer {
-      left: 45%;
-    }
-    #footer1 {
-      left: 55%;
-    }
-    #footer .svg-inline--fa,
-    #footer1 .svg-inline--fa {
+    #footer .svg-inline--fa{
       font-size: 23px;
     }
     .planet a {
@@ -29,14 +22,7 @@
   }
   
   @media screen and (min-width: 2560px) {
-    #footer {
-      left: 47%;
-    }
-    #footer1 {
-      left: 53%;
-    }
-    #footer .svg-inline--fa,
-    #footer1 .svg-inline--fa {
+    #footer .svg-inline--fa{
       font-size: 25px;
     }
     .planet a {
@@ -59,12 +45,6 @@
   }
   
   @media screen and (max-width: 1024px) {
-    #footer1 {
-      left: 73%;
-    }
-    #footer {
-      left: 37%;
-    }
     #about {
       font-size: 20px !important;
     }
@@ -76,12 +56,6 @@
     }
   }
   @media screen and (orientation: landscape) and (max-width: 1024px) {
-    #footer1 {
-      left: 63%;
-    }
-    #footer {
-      left: 40%;
-    }
     #about {
       font-size: 15px !important;
     }
@@ -97,8 +71,7 @@
     #about {
       font-size: 17px !important;
     }
-    #footer .svg-inline--fa,
-    #footer1 .svg-inline--fa {
+    #footer .svg-inline--fa{
       font-size: 17px;
     }
     .logos {
