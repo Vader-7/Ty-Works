@@ -13,7 +13,7 @@
       font-size: 25px;
     }
     #about {
-      font-size: 35px !important;
+      font-size: 33px !important;
     }
     #title,
     #titleM {
@@ -23,8 +23,8 @@
       padding-top: 15% !important;
     }
     .logos img {
-      width: 300px !important;
-      height: 300px !important;
+      width: 250px !important;
+      height: 250px !important;
     }
   }
   
@@ -66,7 +66,7 @@
       left: 37%;
     }
     #about {
-      font-size: 19px !important;
+      font-size: 20px !important;
     }
     #title {
       font-size: 32px !important;
@@ -91,10 +91,6 @@
     .logos {
       padding-top: 22% !important;
     }
-    .logos img {
-      width: 60px !important;
-      height: 60px !important;
-    }
   }
   
   @media screen and (max-width: 370px) {
@@ -104,10 +100,6 @@
     #footer .svg-inline--fa,
     #footer1 .svg-inline--fa {
       font-size: 17px;
-    }
-    .logos img {
-      width: 64px !important;
-      height: 64px !important;
     }
     .logos {
       padding-top: 37% !important;
