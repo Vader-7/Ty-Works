@@ -28,6 +28,7 @@
     "babel": "^6.23.0",
     "babel-plugin-macros": "^3.1.0",
     "bootstrap": "^5.2.3",
+    "cobe": "^0.6.3",
     "gatsby-image": "^3.11.0",
     "gh-pages": "^4.0.0",
     "i18next": "^22.4.6",

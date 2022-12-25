@@ -31,7 +31,7 @@ function App() {
    useEffect(() => {
       gradient.initGradient('#gradient-canvas');
    }, [gradient]);
-
+   
    return (
       <div className="App">
          <Parallax ref={parallax} pages={2} style={{ top: '0', left: '0' }}>

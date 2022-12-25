@@ -57,21 +57,8 @@
       height: 500px !important;
     }
   }
-  @media screen and (max-width: 480px) {
-    article {
-      padding-top: 2rem;
-      padding-bottom: 4rem;
-    }
-  }
   
-  @media screen and (min-device-pixel-ratio: 1.5),
-    screen and (min-resolution: 1.5dppx) {
-    body {
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-  }
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 1024px) {
     #footer1 {
       left: 73%;
     }
