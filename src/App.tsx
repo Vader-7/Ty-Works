@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { SetStateAction, useRef, useReducer, useEffect, useMemo } from 'react';
+import { useState, useRef, useCallback, useEffect, useMemo } from 'react';
 import './App.css';
 import './App.responsive.css';
 import { Gradient } from './Gradient.js';
@@ -20,17 +20,24 @@ import GitHub from '/images/a7snf-2vi9j.avif';
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Balancer from 'react-wrap-balancer';
 
-function App() {
+const App = memo(() => {
+
    const parallax = useRef<IParallax>(null!);
-   const [toggleState, setToggleState] = useReducer((state: number, newState: number) => newState, 1);
+   const [toggleState, setToggleState] = useState(1);
+   const handleTabClick = useCallback((newState: number) => {
+      setToggleState(newState);
+   }, []);
    const gradientColors = ['#c3e4ff', '#6ec3f4', '#e6e3ef', '#0096d7'];
    const gradientOptions = {
       colors: gradientColors,
    };
    const gradient = useMemo(() => new Gradient(gradientOptions), [gradientOptions]);
    useEffect(() => {
-      gradient.initGradient('#gradient-canvas');
+      if (gradient) {
+         gradient.initGradient('#gradient-canvas');
+      }
    }, [gradient]);
+   
    
    return (
       <div className="App">
@@ -50,16 +57,16 @@ function App() {
                </a>
                
                <div id="white-space-in-footer"/>
-               <a className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => setToggleState(1)}>
+               <a className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => handleTabClick(1)}>
                   <FontAwesomeIcon icon={faMobile} />
                </a>
-               <a className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'} onClick={() => setToggleState(2)}>
+               <a className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'} onClick={() => handleTabClick(2)}>
                   <FontAwesomeIcon icon={faDesktop} />
                </a>
             </div>
             <ParallaxLayer offset={0} speed={100} factor={0} className="planet">
                <a href="https://github.com/Vader-7/Ty-Works">
-                  <FontAwesomeIcon icon={faLaptopCode} /> Made by Tyler
+                  <FontAwesomeIcon icon={faLaptopCode} /> タイラー
                </a>
             </ParallaxLayer>
             <ParallaxLayer offset={0} speed={3} factor={1} className="content container" id="presentacion">
@@ -143,5 +150,7 @@ function App() {
          </Parallax>
       </div>
    );
-}
-export default memo(App);
+});
+
+export default App;
+
