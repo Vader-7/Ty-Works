@@ -13,10 +13,10 @@ import {
    faDesktop,
    faMobile,
 } from '@fortawesome/free-solid-svg-icons';
-import img from '/images/Subtract.jpg';
-import leafLogo from '/images/LeaFeeling.jpg';
+import img from '/images/aour4-24nd0.avif';
+import leafLogo from '/images/au8c4-cwndv.avif';
 import qr from '/images/frame.png';
-import GitHub from '/images/github.jpg';
+import GitHub from '/images/a7snf-2vi9j.avif';
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Balancer from 'react-wrap-balancer';
 
