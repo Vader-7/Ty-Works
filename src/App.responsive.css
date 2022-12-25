@@ -65,6 +65,10 @@
     .logos {
       padding-top: 22% !important;
     }
+    .logos img {
+      width: 64px !important;
+      height: 64px !important;
+    }
   }
   
   @media screen and (max-width: 370px) {
