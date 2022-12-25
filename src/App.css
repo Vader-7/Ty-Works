@@ -5,9 +5,9 @@
   z-index: -1;
   width: 100vw;
   height: 100%;
-  --gradient-color-1: #c3e4ff;
-  --gradient-color-2: #589dc5;
-  --gradient-color-3: #e6e3ef;
+  --gradient-color-1: #d6e0f3;
+  --gradient-color-2: #d5d9e0;
+  --gradient-color-3: #008bc7d1;
   --gradient-color-4: #0ba1e1;
 }
 #footer {
