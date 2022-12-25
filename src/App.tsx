@@ -22,7 +22,7 @@ import Balancer from 'react-wrap-balancer';
 
 function App() {
    const parallax = useRef<IParallax>(null!);
-   const [toggleState, setToggleState] = useReducer((state: number, newState: number) => newState, 2);
+   const [toggleState, setToggleState] = useReducer((state: number, newState: number) => newState, 1);
    const gradientColors = ['#c3e4ff', '#6ec3f4', '#e6e3ef', '#0096d7'];
    const gradientOptions = {
       colors: gradientColors,
