@@ -6,9 +6,9 @@
   width: 100vw;
   height: 100%;
   --gradient-color-1: #c3e4ff;
-  --gradient-color-2: #6ec3f4;
+  --gradient-color-2: #589dc5;
   --gradient-color-3: #e6e3ef;
-  --gradient-color-4: #0096d7;
+  --gradient-color-4: #0ba1e1;
 }
 #footer {
   position: fixed;

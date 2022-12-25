@@ -38,6 +38,6 @@
 }
 @font-face {
   font-family: 'Title-2';
-  src: local('Title-2'), url(./assets/fonts/PPNeueMachina-InktrapUltrabold.otf) format('opentype');
+  src: local('Title-2'), url(./assets/fonts/PPRightGrotesk-WideBlack.otf) format('opentype');
   font-display: swap;
 }
