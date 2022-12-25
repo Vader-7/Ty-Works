@@ -100,11 +100,11 @@ function App() {
                      <ParallaxLayer className="logos" offset={1} speed={10} factor={1.2}>
                         <div className="right-div">
                            <a href="https://github.com/Vader-7/RegistAPP">
-                              <img className="w-20 md:w-32 lg:w-48" src={img} alt="" />
+                              <img className="w-24 md:w-32 lg:w-48" src={img} alt="" />
                            </a>
                         </div>
                         <div className="left-div">
-                           <img className="w-20 md:w-32 lg:w-48" src={qr} alt="" />
+                           <img className="w-24 md:w-32 lg:w-48" src={qr} alt="" />
                         </div>
                      </ParallaxLayer>
                   </>
@@ -128,12 +128,12 @@ function App() {
                      <ParallaxLayer className="logos" offset={1} speed={10} factor={1.2}>
                         <div className="right-div">
                            <a href="https://github.com/Vader-7/LeaFeeling">
-                              <img className="w-20 md:w-32 lg:w-48" src={leafLogo} alt="" />
+                              <img className="w-24 md:w-32 lg:w-48" src={leafLogo} alt="" />
                            </a>
                         </div>
                         <div className="left-div">
                            <a href="https://github.com/Vader-7/LeaFeeling">
-                              <img className="w-20 md:w-32 lg:w-48" src={GitHub} alt="" />
+                              <img className="w-24 md:w-32 lg:w-48" src={GitHub} alt="" />
                            </a>
                         </div>
                      </ParallaxLayer>
