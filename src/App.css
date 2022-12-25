@@ -135,10 +135,8 @@
 }
 
 img {
-  width: 200px;
-  height: 200px;
-  border-radius: 30px;
-  box-shadow: none;
+  border-radius: 35px;
+  box-shadow: black;
   max-width: 50%;
   height: auto;
   border-color: white;
