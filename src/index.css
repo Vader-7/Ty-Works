@@ -36,3 +36,8 @@
   src: local('Fuji'), url(./assets/fonts/PPFuji-Light.otf) format('opentype');
   font-display: swap;
 }
+@font-face {
+  font-family: 'Title-2';
+  src: local('Title-2'), url(./assets/fonts/PPNeueMachina-InktrapUltrabold.otf) format('opentype');
+  font-display: swap;
+}
