@@ -4,7 +4,7 @@
   left: 0;
   z-index: -1;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   --gradient-color-1: #c3e4ff;
   --gradient-color-2: #6ec3f4;
   --gradient-color-3: #e6e3ef;
