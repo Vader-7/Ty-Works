@@ -54,7 +54,7 @@
 }
 #goingDown {
   margin-top: 30px;
-  font-size: 30px;
+  font-size: clamp(1.25rem, 1.0227rem + 1.1364vw, 3.75rem);
 }
 #goingDown:hover {
   transform: translateY(10px);
@@ -131,7 +131,7 @@
   animation: fadeIn 1s;
 }
 .planet {
-  font-size: 12px;
+  font-size: clamp(1rem, 8vw - 1.5rem, 0.5rem);
   font-family: 'Title';
   font-weight: 100;
   border: none;
@@ -154,24 +154,19 @@
 }
 #title {
   font-family: 'Title' !important;
-  font-size: 35px;
+  font-size: clamp(1.25rem, 1.0227rem + 1.1364vw, 3.75rem);
   color: #000c15;
 }
 #titleM {
   font-family: 'Title-1' !important;
-  font-size: 35px;
+  font-size: clamp(1.25rem, 1.0227rem + 1.1364vw, 3.75rem);
   color: #000c15;
   padding-top: 10%;
-}
-#titleIcon {
-  font-size: 27px;
-  color: #000c15;
-  padding-bottom: 1px;
 }
 #about {
   font-family: 'Text' !important;
   font-weight: 600;
-  font-size: 23px;
+  font-size: clamp(1.125rem, 0.9545rem + 0.8523vw, 3rem);
   color: #000c15;
 }
 .content {
