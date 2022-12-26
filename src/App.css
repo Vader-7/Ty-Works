@@ -92,7 +92,7 @@ a{
   text-align: center;
   flex-direction: column;
   padding: 0 10%;
-  animation: fadeInM 1s;
+  animation: fadeInM 0.5s;
 }
 #fondo {
   background: #d5d9e0;
@@ -164,7 +164,7 @@ a{
 }
 .active-content #about,
 .active-content #title {
-  animation: fadeIn 1.5s;
+  animation: fadeIn 1s;
 }
 @keyframes fadeIn {
   0% {

@@ -9,81 +9,43 @@
     margin-top: 0;
   }
 }
+@media (max-width: 915px) and (orientation: landscape) {
+  .proyecto {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    align-items: center;
+  }
+  .proyecto a {
+    order: 1;
+    width: 40%;
+    z-index: 3;
+  }
+  .proyecto .texto-presentacion {
+    order: 2; 
+    padding-bottom: 15%;
+  }
+  .proyecto #about {
+    font-size: 0.8rem;
+  }
+}
 
-@media (max-width: 767px) {
+
+@media (max-width: 915px) and (orientation: portrait){
   .proyecto {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .proyecto .texto-presentacion {
-    order: 1;
-    width: 100%;
-    margin-top: 20px;
   }
   .proyecto a {
     order: 2;
-    width: 70%;
+    width: 90%;
   }
 }
-/* for even smaller screens lower the font*/
 @media (max-width: 375px) {
-  .proyecto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   #about {
-    font-size: clamp(0.9rem, 0.892rem + 0.5398vw, 2.1875rem);
-    color: #000c15;
-  }
-  #footer {
-    position: fixed;
-    top: 95%;
-    left: 50%;
-    bottom: 0;
-    width: auto;
-    height: 40px;
-    transform: translate(-50%, -50%);
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px 10px 10px 10px;
-    z-index: 3;
-    padding: 0 10px;
-  }
-  #white-space-in-footer {
-    width: 20px;
-    background-color: transparent;
-    box-shadow: none;
-    margin: auto;  
-  } 
-  #white-space-in-footer:before {
-    width: 10px;
-    height: 50px;
-    border-radius: 0 10px 10px 0;
-    background-color:transparent;   
-    display:inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    content: '';
-}
-#white-space-in-footer:after {
-    width: 10px;
-    height: 50px;
-    border-radius: 10px 0 0 10px;
-    background-color:transparent;   
-    display:inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
-    content: '';
-}
-  #footer .svg-inline--fa {
-    color: black;
-  }
-  .proyecto a{
-    order: 2;
-    width: 70% !important;
+    font-size: 0.8rem;
   }
 }
