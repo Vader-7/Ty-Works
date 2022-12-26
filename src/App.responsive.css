@@ -54,11 +54,13 @@
     border-radius: 10px 10px 10px 10px;
     z-index: 3;
     padding: 0 10px;
+    box-shadow: #d5d9e0 0px 0px 10px 0px;
   }
   
   #white-space-in-footer {
     width: 20px;
     background-color:#d5d9e0;
+    box-shadow: none;
     margin: auto;  
   } 
   #white-space-in-footer:before {
@@ -78,8 +80,9 @@
       vertical-align: middle;
       content: '';
   }
-  .proyecto a {
+  .proyecto a img{
     order: 2;
-    width: 70%;
+    width: 80% !important;
+    z-index: 6 !important;
   }
 }
