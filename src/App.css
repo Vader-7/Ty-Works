@@ -92,7 +92,7 @@ a{
   text-align: center;
   flex-direction: column;
   padding: 0 10%;
-  animation: fadeInM 0.5s;
+  animation: fadeInM 0.7s;
 }
 #fondo {
   background: #d5d9e0;
