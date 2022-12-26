@@ -104,9 +104,8 @@ const App = memo(() => {
               <ParallaxLayer className="proyecto" offset={1} speed={-30} factor={1}>
                 <br />
                 <br />
-                <h3 id="about">Page under construction, please be patient...</h3>
+                <h3 id="about">Page under construction...</h3>
                 <a href="https://github.com/Vader-7/RegistAPP" target="_blank">
-                  <img src={leaf} alt="" style={{ width: 1000 }} />
                 </a>
               </ParallaxLayer>
             </>
