@@ -74,7 +74,6 @@ const App = memo(() => {
                <a href="https://github.com/Vader-7" onClick={() => parallax.current.update}>
                   <h1 id="titleM">Hey there</h1>
                </a>
-               &nbsp;
                <p id="about">
                   <Balancer>
                      I'm Tyler and I am a Full-stack developer from Chile. I have a passion for creating intuitive and

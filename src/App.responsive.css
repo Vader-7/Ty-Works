@@ -26,6 +26,12 @@
     width: 100%;
   }
 }
+@media (max-width: 400px) {
+  .proyecto a {
+    order: 2;
+    width: 87%;
+  }
+}
 /* for even smaller screens lower the font*/
 @media (max-width: 320px) {
   .proyecto {
