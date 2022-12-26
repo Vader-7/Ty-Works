@@ -8,12 +8,10 @@ import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-ic
 import {
   faLaptopCode,
   faChevronCircleDown,
-  faPassport,
   faDesktopAlt,
   faMobileAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import regis from '/images/RegistApp.png';
-import leaf from '/images/LeaFeeling.png';
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Balancer from 'react-wrap-balancer';
 
