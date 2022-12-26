@@ -12,32 +12,32 @@
 @font-face{
   font-family: 'Text-1';
   src: local('Text-1'), url(./assets/fonts/PPNeueMachina-PlainRegular.otf) format('opentype');
-  font-display: swap;
+  font-display: block;
   /* other formats include: 'woff2', 'truetype, 'opentype',
                           'embedded-opentype', and 'svg' */                 
 }
 @font-face{
   font-family: 'Title';
   src: local('Title'), url(./assets/fonts/PPNeueMachina-PlainUltraboldItalic.otf) format('opentype');     
-  font-display: swap;     
+  font-display: block;     
 }
 @font-face {
   font-family: 'Text';
   src: local('Text'), url(./assets/fonts/PPNeueMontreal-Medium.otf) format('opentype');
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: 'Title-1';
   src: local('Title-1'), url(./assets/fonts/PPNeueMontreal-Bold.otf) format('opentype');  
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: 'Fuji';
   src: local('Fuji'), url(./assets/fonts/PPFuji-Light.otf) format('opentype');
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: 'Title-2';
   src: local('Title-2'), url(./assets/fonts/PPRightGrotesk-WideBlack.otf) format('opentype');
-  font-display: swap;
+  font-display: block;
 }

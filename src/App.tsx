@@ -9,8 +9,8 @@ import {
   faLaptopCode,
   faChevronCircleDown,
   faPassport,
-  faDesktop,
-  faMobile,
+  faDesktopAlt,
+  faMobileAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import regis from '/images/RegistApp.png';
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
@@ -37,9 +37,9 @@ const App = memo(() => {
     <div className="App">
       <Parallax ref={parallax} pages={2} style={{ top: '0', left: '0' }}>
         <div id="footer">
-          <a href="https://drive.google.com/uc?export=download&id=1b7iSUR29P5vxzoa7SUIPWFiiTgU7GXID">
+          {/*<a href="https://drive.google.com/uc?export=download&id=1b7iSUR29P5vxzoa7SUIPWFiiTgU7GXID">
             <FontAwesomeIcon icon={faPassport} />
-          </a>
+          </a>*/}
           <a href="https://github.com/Vader-7">
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -51,10 +51,10 @@ const App = memo(() => {
           </a>
           <div id="white-space-in-footer" />
           <a className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => handleTabClick(1)}>
-            <FontAwesomeIcon icon={faMobile} />
+            <FontAwesomeIcon icon={faMobileAlt} />
           </a>
           <a className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'} onClick={() => handleTabClick(2)}>
-            <FontAwesomeIcon icon={faDesktop} />
+            <FontAwesomeIcon icon={faDesktopAlt} />
           </a>
         </div>
         <ParallaxLayer offset={0} speed={100} factor={0} className="planet">
@@ -74,7 +74,7 @@ const App = memo(() => {
           </p>
           <FontAwesomeIcon onClick={() => parallax.current.scrollTo(1)} id="goingDown" icon={faChevronCircleDown} />
         </ParallaxLayer>
-        <ParallaxLayer id="fondo" offset={1} speed={0.5} factor={1} />
+        <ParallaxLayer id="fondo" offset={1} speed={0.5} factor={2} />
         <div className="content-tabs">
           <div className={toggleState === 1 ? 'content  active-content' : 'content'}>
             <>
