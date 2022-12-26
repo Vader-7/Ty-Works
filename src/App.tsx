@@ -4,12 +4,12 @@ import './App.css';
 import './App.responsive.css';
 import { Gradient } from './Gradient.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithubSquare as faGithub, faTwitterSquare as faTwitter } from '@fortawesome/free-brands-svg-icons';
 import {
   faLaptopCode,
   faChevronCircleDown,
-  faDesktopAlt,
-  faMobileAlt,
+  faComputer as faDesktopAlt,
+  faChartArea as faMobileAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import regis from '/images/RegistApp.png';
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';

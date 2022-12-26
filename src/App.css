@@ -141,12 +141,12 @@ a{
 }
 #title {
   font-family: 'Title' !important;
-  font-size: clamp(1.3rem, 1.0227rem + 1.1364vw, 3.75rem);
+  font-size: clamp(1.6875rem, 1.5rem + 0.9375vw, 3.75rem);
   color: #000000;
 }
 #titleM {
   font-family: 'Title-1' !important;
-  font-size: clamp(1.3rem, 1.0227rem + 1.1364vw, 3.75rem);
+  font-size: clamp(1.6875rem, 1.5rem + 0.9375vw, 3.75rem);
   color: #000000;
   padding-top: 10%;
 }
