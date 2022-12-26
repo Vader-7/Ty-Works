@@ -137,12 +137,12 @@
 }
 #title {
   font-family: 'Title' !important;
-  font-size: clamp(1.25rem, 1.0227rem + 1.1364vw, 3.75rem);
+  font-size: clamp(1.3rem, 1.0227rem + 1.1364vw, 3.75rem);
   color: #000c15;
 }
 #titleM {
   font-family: 'Title-1' !important;
-  font-size: clamp(1.25rem, 1.0227rem + 1.1364vw, 3.75rem);
+  font-size: clamp(1.3rem, 1.0227rem + 1.1364vw, 3.75rem);
   color: #000c15;
   padding-top: 10%;
 }
