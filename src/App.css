@@ -13,6 +13,10 @@
 a{
   text-decoration: none !important;
 }
+a:focus{
+  outline: none;
+  outline-style: none;
+}
 #footer {
   position: fixed;
   top: 95%;
