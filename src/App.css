@@ -10,6 +10,9 @@
   --gradient-color-3: #008bc7;
   --gradient-color-4: #0ba1e1;
 }
+a{
+  text-decoration: none !important;
+}
 #footer {
   position: fixed;
   top: 95%;
@@ -64,6 +67,7 @@
   padding-top: 15%;
   font-size: clamp(1.4rem, 0.892rem + 0.5398vw, 2.1875rem);
   color: #000000;
+  box-shadow: #000 0px 0px 0px 0px;
 }
 #footer a{
   font-family: 'Title' !important;
