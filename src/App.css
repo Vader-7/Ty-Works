@@ -25,7 +25,6 @@
   border-radius: 10px 10px 10px 10px;
   z-index: 3;
   padding: 0 10px;
-  box-shadow: #d5d9e0 0px 0px 10px 0px;
 }
 
 #white-space-in-footer {
@@ -107,6 +106,7 @@
 .proyecto a {
   order: 1;
   width: 50%;
+  z-index: 3;
 }
 
 .proyecto .texto-presentacion {
@@ -149,7 +149,7 @@
 #about {
   font-family: 'Text' !important;
   font-weight: 600;
-  font-size: clamp(1rem, 0.892rem + 0.5398vw, 2.1875rem);
+  font-size: clamp(1.2rem, 0.892rem + 0.5398vw, 2.1875rem);
   color: #000c15;
 }
 .content {

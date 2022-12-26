@@ -23,21 +23,19 @@
   }
   .proyecto a {
     order: 2;
-    width: 100%;
-  }
-}
-@media (max-width: 400px) {
-  .proyecto a {
-    order: 2;
-    width: 87%;
+    width: 90%;
   }
 }
 /* for even smaller screens lower the font*/
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .proyecto {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  #about {
+    font-size: clamp(0.9rem, 0.892rem + 0.5398vw, 2.1875rem);
+    color: #000c15;
   }
   #footer {
     position: fixed;
@@ -47,42 +45,45 @@
     width: auto;
     height: 40px;
     transform: translate(-50%, -50%);
-    background-color: #008bc7;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px 10px 10px 10px;
     z-index: 3;
     padding: 0 10px;
-    box-shadow: #d5d9e0 0px 0px 10px 0px;
   }
-  
   #white-space-in-footer {
     width: 20px;
-    background-color:#d5d9e0;
+    background-color: transparent;
     box-shadow: none;
     margin: auto;  
   } 
   #white-space-in-footer:before {
-      height: 40px;
-      border-radius: 0 10px 10px 0;
-      background-color:#008bc7;   
-      display:inline-block;
-      vertical-align: middle;
-      margin-right: 10px;
-      content: '';
+    width: 10px;
+    height: 50px;
+    border-radius: 0 10px 10px 0;
+    background-color:transparent;   
+    display:inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    content: '';
+}
+#white-space-in-footer:after {
+    width: 10px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    background-color:transparent;   
+    display:inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    content: '';
+}
+  #footer .svg-inline--fa {
+    color: black;
   }
-  #white-space-in-footer:after {
-      height: 0px;
-      border-radius: 10px 0 0 10px;
-      background-color:#008bc7;   
-      display:inline-block;
-      vertical-align: middle;
-      content: '';
-  }
-  .proyecto a img{
+  .proyecto a{
     order: 2;
-    width: 80% !important;
-    z-index: 6 !important;
+    width: 70% !important;
   }
 }
