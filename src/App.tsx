@@ -4,7 +4,7 @@ import './App.css';
 import './App.responsive.css';
 import { Gradient } from './Gradient.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import {
   faLaptopCode,
   faChevronCircleDown,
@@ -45,6 +45,9 @@ const App = memo(() => {
           </a>
           <a href="http://linkedin.com/in/tylermiranda" target="_blank">
             <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="https://twitter.com/vader7w" target="_blank">
+            <FontAwesomeIcon icon={faTwitter} />
           </a>
           <div id="white-space-in-footer" />
           <a className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => handleTabClick(1)}>
