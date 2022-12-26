@@ -8,10 +8,12 @@ import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-ic
 import {
   faLaptopCode,
   faChevronCircleDown,
+  faPassport,
   faDesktopAlt,
   faMobileAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import regis from '/images/RegistApp.png';
+import leaf from '/images/LeaFeeling.png';
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Balancer from 'react-wrap-balancer';
 
@@ -77,7 +79,7 @@ const App = memo(() => {
         <div className="content-tabs">
           <div className={toggleState === 1 ? 'content  active-content' : 'content'}>
             <>
-              <ParallaxLayer className="proyecto" offset={1} speed={30} factor={1}>
+              <ParallaxLayer className="proyecto" offset={1} speed={50} factor={1}>
                 <div className="texto-presentacion">
                   <a href="https://github.com/Vader-7/RegistAPP" target="_blank">
                     <h1 id="title">RegistApp</h1>
