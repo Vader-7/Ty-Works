@@ -19,7 +19,7 @@ import React from 'react';
 import styles from './styles.module.css';
 
 
-const Trail: React.FC<{ open: boolean }> = ({ open, children }) => {
+{/*const Trail: React.FC<{ open: boolean }> = ({ open, children }) => {
   const items = React.Children.toArray(children)
   const trail = useTrail(items.length, {
     config: { mass: 5, tension: 2000, friction: 200 },
@@ -37,11 +37,11 @@ const Trail: React.FC<{ open: boolean }> = ({ open, children }) => {
       ))}
     </div>
   )
-}
+}*/}
 
 const App = memo(() => {
   const parallax = useRef<IParallax>(null!);
-  const [open, set] = useState(true)
+  //const [open, set] = useState(true)
   const [toggleState, setToggleState] = useState(1);
   const handleTabClick = useCallback((newState: number) => {
     setToggleState(newState);
