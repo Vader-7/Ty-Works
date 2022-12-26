@@ -53,10 +53,6 @@ const App = memo(() => {
                <a href="http://linkedin.com/in/tylermiranda" target="_blank">
                   <FontAwesomeIcon icon={faLinkedin} />
                </a>
-               <a onClick={() => parallax.current.scrollTo(0)}>
-                  <FontAwesomeIcon icon={faChevronCircleUp} />
-               </a>
-               
                <div id="white-space-in-footer"/>
                <a className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => handleTabClick(1)}>
                   <FontAwesomeIcon icon={faMobile} />
@@ -89,7 +85,7 @@ const App = memo(() => {
             <div className="content-tabs">
                <div className={toggleState === 1 ? 'content  active-content' : 'content'}>
                   <>
-                     <ParallaxLayer className="proyecto" offset={1} speed={-30} factor={1}>
+                     <ParallaxLayer className="proyecto" offset={1} speed={30} factor={1}>
                         <div className='texto-presentacion'>
                         <a href="https://github.com/Vader-7/RegistAPP" target="_blank">
                            <h1 id="title">RegistApp</h1>
