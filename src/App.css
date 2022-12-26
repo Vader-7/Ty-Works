@@ -164,7 +164,7 @@ a{
 }
 .active-content #about,
 .active-content #title {
-  animation: fadeIn 1s;
+  animation: fadeIn 1.5s;
 }
 @keyframes fadeIn {
   0% {
