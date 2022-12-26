@@ -125,7 +125,7 @@ const App = memo(() => {
                   </p>
                 </div>
                 <a href="https://github.com/Vader-7/RegistAPP" target="_blank">
-                  <img loading='lazy' data-aos-duration="2000" width="100%" height="auto" src={regis} alt=""/>
+                  <img loading='lazy' data-aos-duration="2000" width="100%" height="100%" src={regis} alt=""/>
                 </a>
               </ParallaxLayer>
             </>
