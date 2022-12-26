@@ -76,7 +76,7 @@ const App = memo(() => {
                </a>
                <p id="about">
                   <Balancer>
-                     I'm Tyler Hayashi a Full-stack developer from Chile. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.
+                     I'm Tyler a Full-stack developer from Chile. I have a passion for creating intuitive and functional applications, and I am always looking for new opportunities to learn and grow.
                   </Balancer>
                </p>
                <FontAwesomeIcon
