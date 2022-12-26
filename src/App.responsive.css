@@ -21,6 +21,10 @@
     width: 100%;
     margin-top: 20px;
   }
+  .proyecto a {
+    order: 2;
+    width: 100%;
+  }
 }
 /* for even smaller screens lower the font*/
 @media (max-width: 320px) {
@@ -67,5 +71,9 @@
       display:inline-block;
       vertical-align: middle;
       content: '';
+  }
+  .proyecto a {
+    order: 2;
+    width: 70%;
   }
 }

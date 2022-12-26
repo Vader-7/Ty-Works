@@ -166,7 +166,7 @@
 #about {
   font-family: 'Text' !important;
   font-weight: 600;
-  font-size: clamp(1.125rem, 0.9545rem + 0.8523vw, 3rem);
+  font-size: clamp(1rem, 0.892rem + 0.5398vw, 2.1875rem);
   color: #000c15;
 }
 .content {
